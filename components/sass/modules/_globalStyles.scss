@@ -1,4 +1,51 @@
 div.container {
     background: $white;
-    padding: 0 80px;
 }//container
+
+@media print
+{    
+    .noPrint, .noPrint *
+    {
+        display: none !important;
+    }
+}
+
+img {
+    font-size: 0;
+    color: $white;
+    max-width: 100%;
+    height: auto;
+    display: inline-block;
+    vertical-align: middle; 
+}
+
+a.backToTop {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 20;
+    background: none;
+    color: $white;
+    width: 0; 
+    height: 0; 
+    border-top: 50px solid transparent;
+    border-bottom: 0px solid transparent; 
+    border-right: 50px solid $jaffa; 
+    display: none;
+
+    @include breakpoint(max-width $phoneLandscape) {
+        display: none !important;
+    }
+
+    &:hover {
+        border-right-color: $toryBlue;
+    }
+
+    i {
+        font-size: 18px;
+        position: absolute;
+        bottom: 0;
+        right: -40px;
+        font-size: 24px;
+    }
+}//backToTop

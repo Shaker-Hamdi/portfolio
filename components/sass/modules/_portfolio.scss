@@ -1,0 +1,37 @@
+section.portfolio {
+    margin-top: 40px;
+    border-bottom: solid 1px $borderGray;
+    @include clearfix;
+
+    @include sectionHeader;
+    
+    article.content {
+        margin-bottom: 40px;
+
+        div.project {
+            margin-top: 80px;
+
+            &:first-child {
+                margin-top: 0;
+            }
+
+            div.projectThumb {}
+
+            div.projectDesc {
+                h2 {
+                    font-size: 24px;
+                    margin-bottom: 20px;
+                }
+
+                p {
+                    line-height: 2;
+                    margin-bottom: 20px;
+                }
+
+                a.more {
+                    @include buttonStyle;
+                }
+            }
+        }//project
+    }
+}//portfolio

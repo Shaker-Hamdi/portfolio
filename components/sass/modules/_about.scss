@@ -1,5 +1,19 @@
 section.about {
     margin-top: 40px;
+    border-bottom: solid 1px $borderGray;
+    @include clearfix;
 
     @include sectionHeader;
+    
+    article.content {
+        margin-bottom: 40px;
+        
+        div.personalImage {}
+
+        div.text {
+            p {
+                line-height: 2;
+            }
+        }
+    }
 }//about

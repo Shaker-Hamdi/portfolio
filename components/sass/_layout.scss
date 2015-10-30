@@ -2,6 +2,76 @@ div.container {
 	@include container;
 }//container
 
+div.globalWrapper {
+    @include span(10 of 12);
+    @include push(1);
+}//globalWrapper
+
 header.mainHeader {
     @include full;
 }//header
+
+section.about {
+    @include full;
+
+    article.content {
+        @include full;
+
+        div.personalImage {
+            @include span(3 of 10);
+        }
+
+        div.text {
+            @include span(last 7 of 10);
+        }
+    }//content
+}//about
+
+section.portfolio {
+    @include full;
+
+    article.content {
+        @include full;
+
+        div.project {
+            @include full;
+
+            div.projectThumb {
+                @include span(5 of 10);
+            }
+
+            div.projectDesc {
+                @include span(last 5 of 10);
+            }
+        }
+    }//content
+}//portfolio
+
+
+section.contactMe {
+    @include full;
+
+    article.content {
+        @include full;
+
+        form {
+            @include full;
+
+            label.name {
+                @include span(5 of 10);
+            }
+
+            label.mail {
+                @include span(last 5 of 10);
+            }
+
+            label.message, div.submit {
+                @include full;
+            }
+        }
+    }//content
+}//contactMe
+
+footer {
+    @include full;
+}//footer
