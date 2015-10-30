@@ -14,6 +14,10 @@ body {
 	@include bodyFont;
 	color: $white;
 	@include clearfix;
+    padding: 40px 0;
+
+    // important for the mmenu plugin to work correctly
+    background: $bgGray;
 
 	* {
 		text-decoration: none;
@@ -28,9 +32,6 @@ body {
 		@include transition-duration(.3s);
 		@include transition-timing-function(ease in);
 	}
-
-    // important for the mmenu plugin to work correctly
-    background: $white;
 }
 .icon {
 	font-family: $iconFont;

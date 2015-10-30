@@ -90,7 +90,8 @@ body {
   font-size: 16px;
   font-weight: 400;
   color: #ffffff;
-  background: #ffffff;
+  padding: 40px 0;
+  background: #eeeeee;
 }
 /* line 17, ../../../components/sass/_mixins.scss */
 body:before, body:after {
@@ -101,7 +102,7 @@ body:before, body:after {
 body:after {
   clear: both;
 }
-/* line 18, ../../../components/sass/_base.scss */
+/* line 22, ../../../components/sass/_base.scss */
 body * {
   text-decoration: none;
   -moz-transition-property: all;
@@ -117,7 +118,7 @@ body * {
   -webkit-transition-timing-function: ease in;
   transition-timing-function: ease in;
 }
-/* line 25, ../../../components/sass/_base.scss */
+/* line 29, ../../../components/sass/_base.scss */
 body a, body button, body input {
   text-decoration: none;
   -moz-transition-property: all;
@@ -134,12 +135,12 @@ body a, body button, body input {
   transition-timing-function: ease in;
 }
 
-/* line 35, ../../../components/sass/_base.scss */
+/* line 36, ../../../components/sass/_base.scss */
 .icon {
   font-family: "FontAwesome";
 }
 
-/* line 39, ../../../components/sass/_base.scss */
+/* line 40, ../../../components/sass/_base.scss */
 a.backToTop {
   position: fixed;
   bottom: 20px;
@@ -154,23 +155,23 @@ a.backToTop {
   font-weight: normal;
 }
 @media (max-width: 768px) {
-  /* line 39, ../../../components/sass/_base.scss */
+  /* line 40, ../../../components/sass/_base.scss */
   a.backToTop {
     display: none !important;
   }
 }
-/* line 56, ../../../components/sass/_base.scss */
+/* line 57, ../../../components/sass/_base.scss */
 a.backToTop:hover {
   background: black;
 }
 
 @media print {
-  /* line 63, ../../../components/sass/_base.scss */
+  /* line 64, ../../../components/sass/_base.scss */
   .noPrint, .noPrint * {
     display: none !important;
   }
 }
-/* line 69, ../../../components/sass/_base.scss */
+/* line 70, ../../../components/sass/_base.scss */
 img {
   font-size: 0;
   color: #ffffff;
@@ -192,205 +193,9 @@ div.container:after {
   display: block;
   clear: both;
 }
-@media (max-width: 768px) {
-  /* line 1, ../../../components/sass/_layout.scss */
-  div.container {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-}
 
-/* line 9, ../../../components/sass/_layout.scss */
-h1.logo {
-  clear: both;
-  width: 100%;
-  float: left;
-  margin-left: 0;
-  margin-right: 0;
-}
-
-/* line 13, ../../../components/sass/_layout.scss */
-hr.sep {
-  width: 48.57143%;
-  float: left;
-  margin-right: 2.85714%;
-  margin-left: 25.71429%;
-}
-@media (max-width: 768px) {
-  /* line 13, ../../../components/sass/_layout.scss */
-  hr.sep {
-    clear: both;
-    width: 100%;
-    float: left;
-    margin-left: 0;
-    margin-right: 0;
-  }
-}
-
-/* line 22, ../../../components/sass/_layout.scss */
-div.socialLinks {
-  clear: both;
-  width: 100%;
-  float: left;
-  margin-left: 0;
-  margin-right: 0;
-}
-
-/* line 26, ../../../components/sass/_layout.scss */
-div.mainSlider {
-  clear: both;
-  width: 100%;
-  float: left;
-  margin-left: 0;
-  margin-right: 0;
-}
-
-/* line 30, ../../../components/sass/_layout.scss */
-div.about {
-  clear: both;
-  width: 100%;
-  float: left;
-  margin-left: 0;
-  margin-right: 0;
-}
-/* line 33, ../../../components/sass/_layout.scss */
-div.about h2 {
-  clear: both;
-  width: 100%;
-  float: left;
-  margin-left: 0;
-  margin-right: 0;
-}
-/* line 37, ../../../components/sass/_layout.scss */
-div.about p {
-  width: 65.71429%;
-  float: left;
-  margin-right: 2.85714%;
-  margin-left: 17.14286%;
-}
-@media (max-width: 768px) {
-  /* line 37, ../../../components/sass/_layout.scss */
-  div.about p {
-    clear: both;
-    width: 100%;
-    float: left;
-    margin-left: 0;
-    margin-right: 0;
-    margin-left: 0%;
-  }
-}
-/* line 47, ../../../components/sass/_layout.scss */
-div.about div.download {
-  clear: both;
-  width: 100%;
-  float: left;
-  margin-left: 0;
-  margin-right: 0;
-}
-
-/* line 52, ../../../components/sass/_layout.scss */
-div.contact {
-  clear: both;
-  width: 100%;
-  float: left;
-  margin-left: 0;
-  margin-right: 0;
-}
-/* line 55, ../../../components/sass/_layout.scss */
-div.contact h2 {
-  clear: both;
-  width: 100%;
-  float: left;
-  margin-left: 0;
-  margin-right: 0;
-}
-/* line 59, ../../../components/sass/_layout.scss */
-div.contact form {
-  width: 65.71429%;
-  float: left;
-  margin-right: 2.85714%;
-  margin-left: 17.14286%;
-}
-@media (max-width: 768px) {
-  /* line 59, ../../../components/sass/_layout.scss */
-  div.contact form {
-    clear: both;
-    width: 100%;
-    float: left;
-    margin-left: 0;
-    margin-right: 0;
-    margin-left: 0%;
-  }
-}
-/* line 68, ../../../components/sass/_layout.scss */
-div.contact form label {
-  width: 31.42857%;
-  float: left;
-}
-/* line 66, c:/Ruby193/lib/ruby/gems/1.9.1/gems/susy-2.1.3/sass/susy/language/susy/_gallery.scss */
-div.contact form label:nth-child(3n + 1) {
-  margin-left: 0;
-  margin-right: -100%;
-  clear: both;
-  margin-left: 0;
-}
-/* line 66, c:/Ruby193/lib/ruby/gems/1.9.1/gems/susy-2.1.3/sass/susy/language/susy/_gallery.scss */
-div.contact form label:nth-child(3n + 2) {
-  margin-left: 34.28571%;
-  margin-right: -100%;
-  clear: none;
-}
-/* line 66, c:/Ruby193/lib/ruby/gems/1.9.1/gems/susy-2.1.3/sass/susy/language/susy/_gallery.scss */
-div.contact form label:nth-child(3n + 3) {
-  margin-left: 68.57143%;
-  margin-right: -100%;
-  clear: none;
-}
-@media (max-width: 768px) {
-  /* line 72, ../../../components/sass/_layout.scss */
-  div.contact form label:nth-child(2n + 1), div.contact form label:nth-child(2n + 2) {
-    clear: both;
-    width: 100%;
-    float: left;
-    margin-left: 0;
-    margin-right: 0;
-  }
-}
-/* line 77, ../../../components/sass/_layout.scss */
-div.contact form label input {
-  clear: both;
-  width: 100%;
-  float: left;
-  margin-left: 0;
-  margin-right: 0;
-}
-/* line 82, ../../../components/sass/_layout.scss */
-div.contact form div {
-  clear: both;
-  width: 100%;
-  float: left;
-  margin-left: 0;
-  margin-right: 0;
-}
-
-/* line 88, ../../../components/sass/_layout.scss */
-footer {
-  clear: both;
-  width: 100%;
-  float: left;
-  margin-left: 0;
-  margin-right: 0;
-}
-/* line 91, ../../../components/sass/_layout.scss */
-footer div.mmd {
-  clear: both;
-  width: 100%;
-  float: left;
-  margin-left: 0;
-  margin-right: 0;
-}
-/* line 95, ../../../components/sass/_layout.scss */
-footer div.copyrights {
+/* line 5, ../../../components/sass/_layout.scss */
+header.mainHeader {
   clear: both;
   width: 100%;
   float: left;
@@ -3662,6 +3467,37 @@ Copyright (c) 2015 Daniel Eden
 /* line 50, ../../../components/sass/modules/_owlTheme.scss */
 .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
   background: #869791;
+}
+
+/* line 1, ../../../components/sass/modules/_globalStyles.scss */
+div.container {
+  background: #ffffff;
+  padding: 0 80px;
+}
+
+/* line 1, ../../../components/sass/modules/_header.scss */
+header.mainHeader {
+  text-align: center;
+  border-bottom: solid 1px #eeeeee;
+}
+/* line 5, ../../../components/sass/modules/_header.scss */
+header.mainHeader h1 {
+  margin: 40px auto;
+  display: block;
+}
+/* line 9, ../../../components/sass/modules/_header.scss */
+header.mainHeader h1 a {
+  display: block;
+  width: 163px;
+  height: 54px;
+  margin: auto;
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-image: url("../images/logo.png");
+  background-size: 136px 45px;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,18 @@
+header.mainHeader {
+    text-align: center;
+    border-bottom: solid 1px $borderGray;
+
+    h1 {
+        margin: 40px auto;
+        display: block;
+
+        a {
+            display: block;
+            width: 163px;
+            height: 54px;
+            margin: auto;
+            @include hideText;
+            @include backgroundImage($image: "logo.png", $size: 136px 45px, $horizontal: center, $vertical: center);
+        }
+    }
+}
