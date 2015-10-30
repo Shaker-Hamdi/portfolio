@@ -3557,6 +3557,643 @@ Copyright (c) 2015 Daniel Eden
   background: #869791;
 }
 
+/* Magnific Popup CSS */
+/* line 2, ../../../components/sass/modules/_magnificPopup.scss */
+.mfp-bg {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1042;
+  overflow: hidden;
+  position: fixed;
+  background: #0b0b0b;
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+}
+
+/* line 14, ../../../components/sass/modules/_magnificPopup.scss */
+.mfp-wrap {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1043;
+  position: fixed;
+  outline: none !important;
+  -webkit-backface-visibility: hidden;
+}
+
+/* line 24, ../../../components/sass/modules/_magnificPopup.scss */
+.mfp-container {
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  padding: 0 8px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 36, ../../../components/sass/modules/_magnificPopup.scss */
+.mfp-container:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+/* line 42, ../../../components/sass/modules/_magnificPopup.scss */
+.mfp-align-top .mfp-container:before {
+  display: none;
+}
+
+/* line 45, ../../../components/sass/modules/_magnificPopup.scss */
+.mfp-content {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 auto;
+  text-align: left;
+  z-index: 1045;
+}
+
+/* line 53, ../../../components/sass/modules/_magnificPopup.scss */
+.mfp-inline-holder .mfp-content, .mfp-ajax-holder .mfp-content {
+  width: 100%;
+  cursor: auto;
+}
+
+/* line 57, ../../../components/sass/modules/_magnificPopup.scss */
+.mfp-ajax-cur {
+  cursor: progress;
+}
+
+/* line 60, ../../../components/sass/modules/_magnificPopup.scss */
+.mfp-zoom-out-cur, .mfp-zoom-out-cur .mfp-image-holder .mfp-close {
+  cursor: -moz-zoom-out;
+  cursor: -webkit-zoom-out;
+  cursor: zoom-out;
+}
+
+/* line 65, ../../../components/sass/modules/_magnificPopup.scss */
+.mfp-zoom {
+  cursor: pointer;
+  cursor: -webkit-zoom-in;
+  cursor: -moz-zoom-in;
+  cursor: zoom-in;
+}
+
+/* line 71, ../../../components/sass/modules/_magnificPopup.scss */
+.mfp-auto-cursor .mfp-content {
+  cursor: auto;
+}
+
+/* line 74, ../../../components/sass/modules/_magnificPopup.scss */
+.mfp-close, .mfp-arrow, .mfp-preloader, .mfp-counter {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+/* line 79, ../../../components/sass/modules/_magnificPopup.scss */
+.mfp-loading.mfp-figure {
+  display: none;
+}
+
+/* line 82, ../../../components/sass/modules/_magnificPopup.scss */
+.mfp-hide {
+  display: none !important;
+}
+
+/* line 85, ../../../components/sass/modules/_magnificPopup.scss */
+.mfp-preloader {
+  color: #CCC;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  text-align: center;
+  margin-top: -0.8em;
+  left: 8px;
+  right: 8px;
+  z-index: 1044;
+}
+
+/* line 95, ../../../components/sass/modules/_magnificPopup.scss */
+.mfp-preloader a {
+  color: #CCC;
+}
+
+/* line 97, ../../../components/sass/modules/_magnificPopup.scss */
+.mfp-preloader a:hover {
+  color: #FFF;
+}
+
+/* line 100, ../../../components/sass/modules/_magnificPopup.scss */
+.mfp-s-ready .mfp-preloader {
+  display: none;
+}
+
+/* line 103, ../../../components/sass/modules/_magnificPopup.scss */
+.mfp-s-error .mfp-content {
+  display: none;
+}
+
+/* line 106, ../../../components/sass/modules/_magnificPopup.scss */
+button.mfp-close, button.mfp-arrow {
+  overflow: visible;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  -webkit-appearance: none;
+  display: block;
+  outline: none;
+  padding: 0;
+  z-index: 1046;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+/* line 118, ../../../components/sass/modules/_magnificPopup.scss */
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+/* line 122, ../../../components/sass/modules/_magnificPopup.scss */
+.mfp-close {
+  width: 44px;
+  height: 44px;
+  line-height: 44px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  text-decoration: none;
+  text-align: center;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  padding: 0 0 18px 10px;
+  color: #FFF;
+  font-style: normal;
+  font-size: 28px;
+  font-family: Arial, Baskerville, monospace;
+}
+
+/* line 138, ../../../components/sass/modules/_magnificPopup.scss */
+.mfp-close:hover, .mfp-close:focus {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+/* line 141, ../../../components/sass/modules/_magnificPopup.scss */
+.mfp-close:active {
+  top: 1px;
+}
+
+/* line 144, ../../../components/sass/modules/_magnificPopup.scss */
+.mfp-close-btn-in .mfp-close {
+  color: #333;
+}
+
+/* line 147, ../../../components/sass/modules/_magnificPopup.scss */
+.mfp-image-holder .mfp-close, .mfp-iframe-holder .mfp-close {
+  color: #FFF;
+  right: -6px;
+  text-align: right;
+  padding-right: 6px;
+  width: 100%;
+}
+
+/* line 154, ../../../components/sass/modules/_magnificPopup.scss */
+.mfp-counter {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #CCC;
+  font-size: 12px;
+  line-height: 18px;
+  white-space: nowrap;
+}
+
+/* line 163, ../../../components/sass/modules/_magnificPopup.scss */
+.mfp-arrow {
+  position: absolute;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  margin: 0;
+  top: 50%;
+  margin-top: -55px;
+  padding: 0;
+  width: 90px;
+  height: 110px;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* line 174, ../../../components/sass/modules/_magnificPopup.scss */
+.mfp-arrow:active {
+  margin-top: -54px;
+}
+
+/* line 176, ../../../components/sass/modules/_magnificPopup.scss */
+.mfp-arrow:hover, .mfp-arrow:focus {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+/* line 179, ../../../components/sass/modules/_magnificPopup.scss */
+.mfp-arrow:before, .mfp-arrow:after, .mfp-arrow .mfp-b, .mfp-arrow .mfp-a {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin-top: 35px;
+  margin-left: 35px;
+  border: medium inset transparent;
+}
+
+/* line 190, ../../../components/sass/modules/_magnificPopup.scss */
+.mfp-arrow:after, .mfp-arrow .mfp-a {
+  border-top-width: 13px;
+  border-bottom-width: 13px;
+  top: 8px;
+}
+
+/* line 194, ../../../components/sass/modules/_magnificPopup.scss */
+.mfp-arrow:before, .mfp-arrow .mfp-b {
+  border-top-width: 21px;
+  border-bottom-width: 21px;
+  opacity: 0.7;
+}
+
+/* line 199, ../../../components/sass/modules/_magnificPopup.scss */
+.mfp-arrow-left {
+  left: 0;
+}
+
+/* line 201, ../../../components/sass/modules/_magnificPopup.scss */
+.mfp-arrow-left:after, .mfp-arrow-left .mfp-a {
+  border-right: 17px solid #FFF;
+  margin-left: 31px;
+}
+
+/* line 204, ../../../components/sass/modules/_magnificPopup.scss */
+.mfp-arrow-left:before, .mfp-arrow-left .mfp-b {
+  margin-left: 25px;
+  border-right: 27px solid #3F3F3F;
+}
+
+/* line 208, ../../../components/sass/modules/_magnificPopup.scss */
+.mfp-arrow-right {
+  right: 0;
+}
+
+/* line 210, ../../../components/sass/modules/_magnificPopup.scss */
+.mfp-arrow-right:after, .mfp-arrow-right .mfp-a {
+  border-left: 17px solid #FFF;
+  margin-left: 39px;
+}
+
+/* line 213, ../../../components/sass/modules/_magnificPopup.scss */
+.mfp-arrow-right:before, .mfp-arrow-right .mfp-b {
+  border-left: 27px solid #3F3F3F;
+}
+
+/* line 216, ../../../components/sass/modules/_magnificPopup.scss */
+.mfp-iframe-holder {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+/* line 219, ../../../components/sass/modules/_magnificPopup.scss */
+.mfp-iframe-holder .mfp-content {
+  line-height: 0;
+  width: 100%;
+  max-width: 900px;
+}
+
+/* line 223, ../../../components/sass/modules/_magnificPopup.scss */
+.mfp-iframe-holder .mfp-close {
+  top: -40px;
+}
+
+/* line 226, ../../../components/sass/modules/_magnificPopup.scss */
+.mfp-iframe-scaler {
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  padding-top: 56.25%;
+}
+
+/* line 231, ../../../components/sass/modules/_magnificPopup.scss */
+.mfp-iframe-scaler iframe {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+  background: #000;
+}
+
+/* Main image in popup */
+/* line 242, ../../../components/sass/modules/_magnificPopup.scss */
+img.mfp-img {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  line-height: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 40px 0 40px;
+  margin: 0 auto;
+}
+
+/* The shadow behind the image */
+/* line 255, ../../../components/sass/modules/_magnificPopup.scss */
+.mfp-figure {
+  line-height: 0;
+}
+
+/* line 257, ../../../components/sass/modules/_magnificPopup.scss */
+.mfp-figure:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 40px;
+  bottom: 40px;
+  display: block;
+  right: 0;
+  width: auto;
+  height: auto;
+  z-index: -1;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+  background: #444;
+}
+
+/* line 270, ../../../components/sass/modules/_magnificPopup.scss */
+.mfp-figure small {
+  color: #BDBDBD;
+  display: block;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+/* line 275, ../../../components/sass/modules/_magnificPopup.scss */
+.mfp-figure figure {
+  margin: 0;
+}
+
+/* line 278, ../../../components/sass/modules/_magnificPopup.scss */
+.mfp-bottom-bar {
+  margin-top: -36px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  cursor: auto;
+}
+
+/* line 286, ../../../components/sass/modules/_magnificPopup.scss */
+.mfp-title {
+  text-align: left;
+  line-height: 18px;
+  color: #F3F3F3;
+  word-wrap: break-word;
+  padding-right: 36px;
+}
+
+/* line 293, ../../../components/sass/modules/_magnificPopup.scss */
+.mfp-image-holder .mfp-content {
+  max-width: 100%;
+}
+
+/* line 296, ../../../components/sass/modules/_magnificPopup.scss */
+.mfp-gallery .mfp-image-holder .mfp-figure {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 800px) and (orientation: landscape), screen and (max-height: 300px) {
+  /**
+       * Remove all paddings around the image on small screen
+       */
+  /* line 303, ../../../components/sass/modules/_magnificPopup.scss */
+  .mfp-img-mobile .mfp-image-holder {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* line 306, ../../../components/sass/modules/_magnificPopup.scss */
+  .mfp-img-mobile img.mfp-img {
+    padding: 0;
+  }
+
+  /* line 308, ../../../components/sass/modules/_magnificPopup.scss */
+  .mfp-img-mobile .mfp-figure:after {
+    top: 0;
+    bottom: 0;
+  }
+
+  /* line 311, ../../../components/sass/modules/_magnificPopup.scss */
+  .mfp-img-mobile .mfp-figure small {
+    display: inline;
+    margin-left: 5px;
+  }
+
+  /* line 314, ../../../components/sass/modules/_magnificPopup.scss */
+  .mfp-img-mobile .mfp-bottom-bar {
+    background: rgba(0, 0, 0, 0.6);
+    bottom: 0;
+    margin: 0;
+    top: auto;
+    padding: 3px 5px;
+    position: fixed;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  /* line 324, ../../../components/sass/modules/_magnificPopup.scss */
+  .mfp-img-mobile .mfp-bottom-bar:empty {
+    padding: 0;
+  }
+
+  /* line 326, ../../../components/sass/modules/_magnificPopup.scss */
+  .mfp-img-mobile .mfp-counter {
+    right: 5px;
+    top: 3px;
+  }
+
+  /* line 329, ../../../components/sass/modules/_magnificPopup.scss */
+  .mfp-img-mobile .mfp-close {
+    top: 0;
+    right: 0;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    background: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    text-align: center;
+    padding: 0;
+  }
+}
+@media all and (max-width: 900px) {
+  /* line 342, ../../../components/sass/modules/_magnificPopup.scss */
+  .mfp-arrow {
+    -webkit-transform: scale(0.75);
+    transform: scale(0.75);
+  }
+
+  /* line 346, ../../../components/sass/modules/_magnificPopup.scss */
+  .mfp-arrow-left {
+    -webkit-transform-origin: 0;
+    transform-origin: 0;
+  }
+
+  /* line 350, ../../../components/sass/modules/_magnificPopup.scss */
+  .mfp-arrow-right {
+    -webkit-transform-origin: 100%;
+    transform-origin: 100%;
+  }
+
+  /* line 354, ../../../components/sass/modules/_magnificPopup.scss */
+  .mfp-container {
+    padding-left: 6px;
+    padding-right: 6px;
+  }
+}
+/* line 359, ../../../components/sass/modules/_magnificPopup.scss */
+.mfp-ie7 .mfp-img {
+  padding: 0;
+}
+
+/* line 361, ../../../components/sass/modules/_magnificPopup.scss */
+.mfp-ie7 .mfp-bottom-bar {
+  width: 600px;
+  left: 50%;
+  margin-left: -300px;
+  margin-top: 5px;
+  padding-bottom: 5px;
+}
+
+/* line 367, ../../../components/sass/modules/_magnificPopup.scss */
+.mfp-ie7 .mfp-container {
+  padding: 0;
+}
+
+/* line 369, ../../../components/sass/modules/_magnificPopup.scss */
+.mfp-ie7 .mfp-content {
+  padding-top: 44px;
+}
+
+/* line 371, ../../../components/sass/modules/_magnificPopup.scss */
+.mfp-ie7 .mfp-close {
+  top: 0;
+  right: 0;
+  padding-top: 0;
+}
+
+/*========= Animation Effect ========= */
+@keyframes hinge {
+  0% {
+    transform: rotate(0);
+    transform-origin: top left;
+    animation-timing-function: ease-in-out;
+  }
+  20%, 60% {
+    transform: rotate(80deg);
+    transform-origin: top left;
+    animation-timing-function: ease-in-out;
+  }
+  40% {
+    transform: rotate(60deg);
+    transform-origin: top left;
+    animation-timing-function: ease-in-out;
+  }
+  80% {
+    transform: rotate(60deg) translateY(0);
+    opacity: 1;
+    transform-origin: top left;
+    animation-timing-function: ease-in-out;
+  }
+  100% {
+    transform: translateY(700px);
+    opacity: 0;
+  }
+}
+/* line 390, ../../../components/sass/modules/_magnificPopup.scss */
+.hinge {
+  animation-duration: 1s;
+  animation-name: hinge;
+}
+
+/* line 396, ../../../components/sass/modules/_magnificPopup.scss */
+.mfp-with-fade .mfp-content, .mfp-with-fade.mfp-bg {
+  opacity: 0;
+  transition: opacity .5s ease-out;
+}
+/* line 403, ../../../components/sass/modules/_magnificPopup.scss */
+.mfp-with-fade.mfp-ready .mfp-content {
+  opacity: 1;
+}
+/* line 406, ../../../components/sass/modules/_magnificPopup.scss */
+.mfp-with-fade.mfp-ready.mfp-bg {
+  opacity: 0.8;
+}
+/* line 413, ../../../components/sass/modules/_magnificPopup.scss */
+.mfp-with-fade.mfp-removing.mfp-bg {
+  opacity: 0;
+}
+
+/* line 423, ../../../components/sass/modules/_magnificPopup.scss */
+.mfp-3d-unfold {
+  /* start state */
+  /* animate in */
+  /* animate out */
+}
+/* line 426, ../../../components/sass/modules/_magnificPopup.scss */
+.mfp-3d-unfold .mfp-content {
+  perspective: 2000px;
+}
+/* line 431, ../../../components/sass/modules/_magnificPopup.scss */
+.mfp-3d-unfold .mfp-with-anim {
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  transform-style: preserve-3d;
+  transform: rotateY(-60deg);
+}
+/* line 439, ../../../components/sass/modules/_magnificPopup.scss */
+.mfp-3d-unfold.mfp-bg {
+  opacity: 0;
+  transition: all 0.5s;
+}
+/* line 446, ../../../components/sass/modules/_magnificPopup.scss */
+.mfp-3d-unfold.mfp-ready .mfp-with-anim {
+  opacity: 1;
+  transform: rotateY(0deg);
+}
+/* line 450, ../../../components/sass/modules/_magnificPopup.scss */
+.mfp-3d-unfold.mfp-ready.mfp-bg {
+  opacity: 0.8;
+}
+/* line 458, ../../../components/sass/modules/_magnificPopup.scss */
+.mfp-3d-unfold.mfp-removing .mfp-with-anim {
+  transform: rotateY(60deg);
+  opacity: 0;
+}
+/* line 462, ../../../components/sass/modules/_magnificPopup.scss */
+.mfp-3d-unfold.mfp-removing.mfp-bg {
+  opacity: 0;
+}
+
 /* line 1, ../../../components/sass/modules/_globalStyles.scss */
 div.container {
   background: #ffffff;
@@ -3836,7 +4473,17 @@ section#portfolio article.content div.project div.projectDesc p {
   line-height: 2;
   margin-bottom: 20px;
 }
-/* line 31, ../../../components/sass/modules/_portfolio.scss */
+/* line 30, ../../../components/sass/modules/_portfolio.scss */
+section#portfolio article.content div.project div.projectDesc p a {
+  color: #666666;
+  border-bottom: dotted 1px #999999;
+}
+/* line 34, ../../../components/sass/modules/_portfolio.scss */
+section#portfolio article.content div.project div.projectDesc p a:hover {
+  color: #ee733d;
+  border-color: #ee733d;
+}
+/* line 41, ../../../components/sass/modules/_portfolio.scss */
 section#portfolio article.content div.project div.projectDesc a.more {
   background: none;
   border: none;
@@ -4093,6 +4740,49 @@ section#contactMe article.content form div.submit button span.bg:after {
   -o-transition-timing-function: ease in;
   -webkit-transition-timing-function: ease in;
   transition-timing-function: ease in;
+}
+
+/* line 1, ../../../components/sass/modules/_projectDetails.scss */
+div.projectDetails {
+  width: 70%;
+  margin: auto;
+  background: #ffffff;
+  position: relative;
+  padding: 20px;
+}
+/* line 17, ../../../components/sass/_mixins.scss */
+div.projectDetails:before, div.projectDetails:after {
+  content: " ";
+  display: table;
+}
+/* line 22, ../../../components/sass/_mixins.scss */
+div.projectDetails:after {
+  clear: both;
+}
+@media (max-width: 1440px) {
+  /* line 1, ../../../components/sass/modules/_projectDetails.scss */
+  div.projectDetails {
+    width: 60%;
+  }
+}
+@media (max-width: 1024px) {
+  /* line 1, ../../../components/sass/modules/_projectDetails.scss */
+  div.projectDetails {
+    width: 90%;
+  }
+}
+@media (max-width: 768px) {
+  /* line 1, ../../../components/sass/modules/_projectDetails.scss */
+  div.projectDetails {
+    width: 100%;
+  }
+}
+/* line 21, ../../../components/sass/modules/_projectDetails.scss */
+div.projectDetails button.mfp-close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: #999999;
 }
 
 /* line 1, ../../../components/sass/modules/_footer.scss */

@@ -1,0 +1,27 @@
+div.projectDetails {
+    width: 70%;
+    margin: auto;
+    background: $white;
+    position: relative;
+    padding: 20px;
+    @include clearfix;
+
+    @include breakpoint(max-width $smallDesktop) {
+        width: 60%;
+    }
+
+    @include breakpoint(max-width $iPadPortrait) {
+        width: 90%;
+    }
+
+    @include breakpoint(max-width $phoneLandscape) {
+        width: 100%;
+    }
+
+    button.mfp-close {
+        position: absolute;
+        right: 0;
+        top: 0;
+        color: $textColorLight;
+    }
+}//projectDetails

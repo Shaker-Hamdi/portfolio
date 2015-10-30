@@ -26,6 +26,16 @@ section#portfolio {
                 p {
                     line-height: 2;
                     margin-bottom: 20px;
+
+                    a {
+                        color: $textColorDark;
+                        border-bottom: dotted 1px $textColorLight;
+
+                        &:hover {
+                            color: $jaffa;
+                            border-color: $jaffa;
+                        }
+                    }
                 }
 
                 a.more {
