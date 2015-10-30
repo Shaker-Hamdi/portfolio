@@ -1,0 +1,98 @@
+div.container {
+	@include container;
+
+	@include breakpoint(max-width $phoneLandscape) {
+		@include pad(10px);
+	}
+}
+
+h1.logo {
+	@include full;
+}//logo
+
+hr.sep {
+	@include span(6 of 12);
+	@include push(3);
+
+	@include breakpoint(max-width $phoneLandscape) {
+		@include full;
+	}
+}//sep
+
+div.socialLinks {
+	@include full;
+}//socialLinks
+
+div.mainSlider {
+	@include full;
+}//mainSlider
+
+div.about {
+	@include full;
+
+	h2 {
+		@include full;
+	}
+
+	p {
+		@include span(8 of 12);
+		@include push(2);
+
+		@include breakpoint(max-width $phoneLandscape) {
+			@include full;
+			@include push(0);
+		}
+	}
+
+	div.download {
+		@include full;
+	}
+}//about
+
+div.contact {
+	@include full;
+
+	h2 {
+		@include full;
+	}
+
+	form {
+		@include span(8 of 12);
+		@include push(2);
+
+		@include breakpoint(max-width $phoneLandscape) {
+			@include full;
+			@include push(0);
+		}
+
+		label {
+			@include gallery(12/3 of 12);
+
+			@include breakpoint(max-width $phoneLandscape) {
+				&:nth-child(2n + 1), &:nth-child(2n + 2) {
+					@include full;
+				}
+			}
+
+			input {
+				@include full;
+			}
+		}
+
+		div {
+			@include full;
+		}
+	}
+}//contact
+
+footer {
+	@include full;
+
+	div.mmd {
+		@include full;
+	}
+
+	div.copyrights {
+		@include full;
+	}
+}

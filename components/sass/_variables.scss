@@ -1,0 +1,43 @@
+// BORDER BOX MODEL
+// @include global-box-sizing(border-box);
+// or the shortcut
+@include border-box-sizing;
+
+// COLORS VARIABLES
+$white: 			#ffffff;
+$bgGray: 	    	#ededed;
+$borderGray:		#d9d9d9;
+$darkGray:			#4d4d4d;
+$lightGray:			#f5f5f5;
+$textColorDark:		#666666;
+$textColorLight:	#999999;
+$sliver:			#cccccc;
+$toryBlue:          #0B519F;
+$jaffa:             #ee733d;
+
+// FONTS VARIABLES
+$bodyFont:	    'Roboto Slab', serif;
+$hFont:         'Roboto Slab', serif;
+$iconFont:      'FontAwesome';
+
+
+// Responsive Variables
+$desktop:			1824px;
+$smallDesktop:		1440px;
+$iPadLandscape:     1224px;
+$iPadPortrait:		1024px;
+$phoneLandscape:     768px;
+$phonePortrait:      640px;
+
+
+// LAYOUT SETTINGS
+$susy: (
+	flow: ltr,
+    container: 960px,
+    columns: 12,
+    gutters: 1/2,
+    math: fluid,
+    output: float,
+    gutter-position: after,
+    global-box-sizing: border-box
+);
