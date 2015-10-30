@@ -11,7 +11,7 @@ header.mainHeader {
     @include full;
 }//header
 
-section.about {
+section#about {
     @include full;
 
     article.content {
@@ -27,7 +27,7 @@ section.about {
     }//content
 }//about
 
-section.portfolio {
+section#portfolio {
     @include full;
 
     article.content {
@@ -48,7 +48,7 @@ section.portfolio {
 }//portfolio
 
 
-section.contactMe {
+section#contactMe {
     @include full;
 
     article.content {

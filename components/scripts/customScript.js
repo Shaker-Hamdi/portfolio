@@ -26,5 +26,11 @@ $(document).ready(function() {
         });
     })(); //Back to top button
 
+    (function() {
+        $("nav.mainNav").singlePageNav({
+            filter: ':not(.external)',
+            updateHash: false
+        });
+    })(); //Navigation
 
 });

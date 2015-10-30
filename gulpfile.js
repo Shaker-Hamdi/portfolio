@@ -23,7 +23,7 @@ if (env === 'development') {
 	sassStyle = 'compressed';
 }
 
-jsSources = ['components/scripts/owl.carousel.min.js', 'components/scripts/customScript.js'];
+jsSources = ['components/scripts/owl.carousel.min.js', 'components/scripts/jquery.singlePageNav.min.js', 'components/scripts/customScript.js'];
 sassSources = ['components/sass/style.scss'];
 htmlSources = [outputDir + '*.html'];
 
