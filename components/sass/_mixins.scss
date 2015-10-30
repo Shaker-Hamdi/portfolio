@@ -60,3 +60,30 @@
     font-size: $size + px;
     font-weight: $weight;
 }
+
+@mixin sectionHeader($font: $hFont, $size: 30px, $letterSpacing: 1px) {
+    header.sectionHeader {
+        width: 100%;
+        margin-bottom: 40px;
+        @include clearfix;
+
+        h3 {
+            font-family: $font;
+            font-size: $size;
+            letter-spacing: $letterSpacing;
+            color: $toryBlue;
+            text-align: center;
+        }
+
+        hr {
+            clear: both;
+            width: 30px;
+            height: 1px;
+            display: block;
+            margin: auto;
+            background: $jaffa;
+            border: none;
+            margin-top: 10px;
+        }
+    }
+}

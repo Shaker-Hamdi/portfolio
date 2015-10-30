@@ -15,6 +15,7 @@ body {
 	color: $white;
 	@include clearfix;
     padding: 40px 0;
+    font-size: 14px;
 
     // important for the mmenu plugin to work correctly
     background: $bgGray;
