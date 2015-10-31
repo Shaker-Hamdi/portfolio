@@ -4677,7 +4677,7 @@ section#about article.content div.text div.socialLinks ul li a {
   display: block;
   width: 30px;
   height: 30px;
-  line-height: 25px;
+  line-height: 30px;
   border: solid 1px #eeeeee;
   color: #ffffff;
   text-align: center;
@@ -5329,7 +5329,7 @@ footer div.socialLinks ul li a {
   display: block;
   width: 30px;
   height: 30px;
-  line-height: 25px;
+  line-height: 30px;
   border: solid 1px #eeeeee;
   color: #ffffff;
 }
