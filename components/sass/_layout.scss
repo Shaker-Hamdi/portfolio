@@ -112,6 +112,12 @@ section.projectDetails {
 
         div.slider a {
             @include gallery(10/4 of 10 1/5);
+
+            @include breakpoint(max-width $phoneLandscape) {
+                &:nth-child(2n + 1), &:nth-child(2n + 2) {
+                    @include full;
+                }
+            }
         }
     }
 }//projectDetails

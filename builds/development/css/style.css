@@ -414,8 +414,18 @@ section.projectDetails div.gallery div.slider a:nth-child(4n + 4) {
   margin-right: -100%;
   clear: none;
 }
+@media (max-width: 768px) {
+  /* line 117, ../../../components/sass/_layout.scss */
+  section.projectDetails div.gallery div.slider a:nth-child(2n + 1), section.projectDetails div.gallery div.slider a:nth-child(2n + 2) {
+    clear: both;
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
 
-/* line 119, ../../../components/sass/_layout.scss */
+/* line 125, ../../../components/sass/_layout.scss */
 section.thanksMessage {
   clear: both;
   width: 100%;
@@ -424,7 +434,7 @@ section.thanksMessage {
   margin-right: 0;
 }
 
-/* line 123, ../../../components/sass/_layout.scss */
+/* line 129, ../../../components/sass/_layout.scss */
 footer {
   clear: both;
   width: 100%;
@@ -432,7 +442,7 @@ footer {
   margin-left: 0;
   margin-right: 0;
 }
-/* line 126, ../../../components/sass/_layout.scss */
+/* line 132, ../../../components/sass/_layout.scss */
 footer div.socialLinks {
   clear: both;
   width: 100%;
@@ -440,7 +450,7 @@ footer div.socialLinks {
   margin-left: 0;
   margin-right: 0;
 }
-/* line 130, ../../../components/sass/_layout.scss */
+/* line 136, ../../../components/sass/_layout.scss */
 footer p {
   clear: both;
   width: 100%;
