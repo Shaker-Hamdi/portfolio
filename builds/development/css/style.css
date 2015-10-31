@@ -181,7 +181,7 @@ div.globalWrapper {
 }
 
 /* line 15, ../../../components/sass/_layout.scss */
-header.mainHeader {
+p.error, p.success, p.success {
   clear: both;
   width: 100%;
   float: left;
@@ -190,6 +190,15 @@ header.mainHeader {
 }
 
 /* line 19, ../../../components/sass/_layout.scss */
+header.mainHeader {
+  clear: both;
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* line 23, ../../../components/sass/_layout.scss */
 section#about {
   clear: both;
   width: 100%;
@@ -197,7 +206,7 @@ section#about {
   margin-left: 0;
   margin-right: 0;
 }
-/* line 22, ../../../components/sass/_layout.scss */
+/* line 26, ../../../components/sass/_layout.scss */
 section#about article.content {
   clear: both;
   width: 100%;
@@ -205,14 +214,14 @@ section#about article.content {
   margin-left: 0;
   margin-right: 0;
 }
-/* line 25, ../../../components/sass/_layout.scss */
+/* line 29, ../../../components/sass/_layout.scss */
 section#about article.content div.personalImage {
   width: 27.58621%;
   float: left;
   margin-right: 3.44828%;
 }
 @media (max-width: 768px) {
-  /* line 25, ../../../components/sass/_layout.scss */
+  /* line 29, ../../../components/sass/_layout.scss */
   section#about article.content div.personalImage {
     clear: both;
     width: 100%;
@@ -221,14 +230,14 @@ section#about article.content div.personalImage {
     margin-right: 0;
   }
 }
-/* line 33, ../../../components/sass/_layout.scss */
+/* line 37, ../../../components/sass/_layout.scss */
 section#about article.content div.text {
   width: 68.96552%;
   float: right;
   margin-right: 0;
 }
 @media (max-width: 768px) {
-  /* line 33, ../../../components/sass/_layout.scss */
+  /* line 37, ../../../components/sass/_layout.scss */
   section#about article.content div.text {
     clear: both;
     width: 100%;
@@ -238,7 +247,7 @@ section#about article.content div.text {
   }
 }
 
-/* line 43, ../../../components/sass/_layout.scss */
+/* line 47, ../../../components/sass/_layout.scss */
 section#portfolio {
   clear: both;
   width: 100%;
@@ -246,7 +255,7 @@ section#portfolio {
   margin-left: 0;
   margin-right: 0;
 }
-/* line 46, ../../../components/sass/_layout.scss */
+/* line 50, ../../../components/sass/_layout.scss */
 section#portfolio article.content {
   clear: both;
   width: 100%;
@@ -254,7 +263,7 @@ section#portfolio article.content {
   margin-left: 0;
   margin-right: 0;
 }
-/* line 49, ../../../components/sass/_layout.scss */
+/* line 53, ../../../components/sass/_layout.scss */
 section#portfolio article.content div.project {
   clear: both;
   width: 100%;
@@ -262,14 +271,14 @@ section#portfolio article.content div.project {
   margin-left: 0;
   margin-right: 0;
 }
-/* line 52, ../../../components/sass/_layout.scss */
+/* line 56, ../../../components/sass/_layout.scss */
 section#portfolio article.content div.project div.projectThumb {
   width: 48.27586%;
   float: left;
   margin-right: 3.44828%;
 }
 @media (max-width: 768px) {
-  /* line 52, ../../../components/sass/_layout.scss */
+  /* line 56, ../../../components/sass/_layout.scss */
   section#portfolio article.content div.project div.projectThumb {
     clear: both;
     width: 100%;
@@ -278,14 +287,14 @@ section#portfolio article.content div.project div.projectThumb {
     margin-right: 0;
   }
 }
-/* line 60, ../../../components/sass/_layout.scss */
+/* line 64, ../../../components/sass/_layout.scss */
 section#portfolio article.content div.project div.projectDesc {
   width: 48.27586%;
   float: right;
   margin-right: 0;
 }
 @media (max-width: 768px) {
-  /* line 60, ../../../components/sass/_layout.scss */
+  /* line 64, ../../../components/sass/_layout.scss */
   section#portfolio article.content div.project div.projectDesc {
     clear: both;
     width: 100%;
@@ -295,7 +304,7 @@ section#portfolio article.content div.project div.projectDesc {
   }
 }
 
-/* line 71, ../../../components/sass/_layout.scss */
+/* line 75, ../../../components/sass/_layout.scss */
 section#contactMe {
   clear: both;
   width: 100%;
@@ -303,7 +312,7 @@ section#contactMe {
   margin-left: 0;
   margin-right: 0;
 }
-/* line 74, ../../../components/sass/_layout.scss */
+/* line 78, ../../../components/sass/_layout.scss */
 section#contactMe article.content {
   clear: both;
   width: 100%;
@@ -311,7 +320,7 @@ section#contactMe article.content {
   margin-left: 0;
   margin-right: 0;
 }
-/* line 77, ../../../components/sass/_layout.scss */
+/* line 81, ../../../components/sass/_layout.scss */
 section#contactMe article.content form {
   clear: both;
   width: 100%;
@@ -319,14 +328,14 @@ section#contactMe article.content form {
   margin-left: 0;
   margin-right: 0;
 }
-/* line 80, ../../../components/sass/_layout.scss */
+/* line 84, ../../../components/sass/_layout.scss */
 section#contactMe article.content form label.name {
   width: 48.27586%;
   float: left;
   margin-right: 3.44828%;
 }
 @media (max-width: 768px) {
-  /* line 80, ../../../components/sass/_layout.scss */
+  /* line 84, ../../../components/sass/_layout.scss */
   section#contactMe article.content form label.name {
     clear: both;
     width: 100%;
@@ -335,14 +344,14 @@ section#contactMe article.content form label.name {
     margin-right: 0;
   }
 }
-/* line 88, ../../../components/sass/_layout.scss */
+/* line 92, ../../../components/sass/_layout.scss */
 section#contactMe article.content form label.mail {
   width: 48.27586%;
   float: right;
   margin-right: 0;
 }
 @media (max-width: 768px) {
-  /* line 88, ../../../components/sass/_layout.scss */
+  /* line 92, ../../../components/sass/_layout.scss */
   section#contactMe article.content form label.mail {
     clear: both;
     width: 100%;
@@ -351,7 +360,7 @@ section#contactMe article.content form label.mail {
     margin-right: 0;
   }
 }
-/* line 96, ../../../components/sass/_layout.scss */
+/* line 100, ../../../components/sass/_layout.scss */
 section#contactMe article.content form label.message, section#contactMe article.content form div.submit {
   clear: both;
   width: 100%;
@@ -360,7 +369,7 @@ section#contactMe article.content form label.message, section#contactMe article.
   margin-right: 0;
 }
 
-/* line 103, ../../../components/sass/_layout.scss */
+/* line 107, ../../../components/sass/_layout.scss */
 section.projectDetails {
   clear: both;
   width: 100%;
@@ -368,7 +377,7 @@ section.projectDetails {
   margin-left: 0;
   margin-right: 0;
 }
-/* line 106, ../../../components/sass/_layout.scss */
+/* line 110, ../../../components/sass/_layout.scss */
 section.projectDetails div.details {
   clear: both;
   width: 100%;
@@ -376,7 +385,7 @@ section.projectDetails div.details {
   margin-left: 0;
   margin-right: 0;
 }
-/* line 110, ../../../components/sass/_layout.scss */
+/* line 114, ../../../components/sass/_layout.scss */
 section.projectDetails div.gallery {
   clear: both;
   width: 100%;
@@ -384,7 +393,7 @@ section.projectDetails div.gallery {
   margin-left: 0;
   margin-right: 0;
 }
-/* line 113, ../../../components/sass/_layout.scss */
+/* line 117, ../../../components/sass/_layout.scss */
 section.projectDetails div.gallery div.slider a {
   width: 23.72881%;
   float: left;
@@ -415,7 +424,7 @@ section.projectDetails div.gallery div.slider a:nth-child(4n + 4) {
   clear: none;
 }
 @media (max-width: 768px) {
-  /* line 117, ../../../components/sass/_layout.scss */
+  /* line 121, ../../../components/sass/_layout.scss */
   section.projectDetails div.gallery div.slider a:nth-child(2n + 1), section.projectDetails div.gallery div.slider a:nth-child(2n + 2) {
     clear: both;
     width: 100%;
@@ -425,7 +434,7 @@ section.projectDetails div.gallery div.slider a:nth-child(4n + 4) {
   }
 }
 
-/* line 125, ../../../components/sass/_layout.scss */
+/* line 129, ../../../components/sass/_layout.scss */
 section.thanksMessage {
   clear: both;
   width: 100%;
@@ -434,7 +443,7 @@ section.thanksMessage {
   margin-right: 0;
 }
 
-/* line 129, ../../../components/sass/_layout.scss */
+/* line 133, ../../../components/sass/_layout.scss */
 footer {
   clear: both;
   width: 100%;
@@ -442,7 +451,7 @@ footer {
   margin-left: 0;
   margin-right: 0;
 }
-/* line 132, ../../../components/sass/_layout.scss */
+/* line 136, ../../../components/sass/_layout.scss */
 footer div.socialLinks {
   clear: both;
   width: 100%;
@@ -450,7 +459,7 @@ footer div.socialLinks {
   margin-left: 0;
   margin-right: 0;
 }
-/* line 136, ../../../components/sass/_layout.scss */
+/* line 140, ../../../components/sass/_layout.scss */
 footer p {
   clear: both;
   width: 100%;
@@ -4425,6 +4434,28 @@ a.backToTop i {
   overflow: hidden !important;
   shadow: none;
   border: none;
+}
+
+/* line 62, ../../../components/sass/modules/_globalStyles.scss */
+p.error, p.success {
+  margin-top: 20px;
+  color: #ffffff;
+  padding: 10px 50px 10px 20px;
+  background: #f04124;
+  position: relative;
+}
+/* line 69, ../../../components/sass/modules/_globalStyles.scss */
+p.error i.dismess, p.success i.dismess {
+  font-family: tahoma, sans-serif;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  cursor: pointer;
+}
+
+/* line 78, ../../../components/sass/modules/_globalStyles.scss */
+p.success {
+  background: #43AC6A;
 }
 
 /* line 1, ../../../components/sass/modules/_header.scss */

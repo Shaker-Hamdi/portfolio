@@ -49,6 +49,15 @@ $(document).ready(function() {
         }
     })(); //Projce Details
 
+    (function() {
+        if ($("i.dismess").length) {
+            $("i.dismess").on("click", function(event) {
+                event.preventDefault();
+                $(this).parent("p").hide();
+            });
+        }
+    })(); //Dismess button
+
 
     /*(function() {
         if ($("div.project a.more").length) {

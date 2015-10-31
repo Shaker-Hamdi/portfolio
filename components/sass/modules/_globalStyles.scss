@@ -58,3 +58,24 @@ a.backToTop {
     shadow: none;
     border: none;
 }
+
+p.error {
+    margin-top: 20px;
+    color: $white;
+    padding: 10px 50px 10px 20px;
+    background: #f04124;
+    position: relative;
+
+    i.dismess {
+        font-family: tahoma, sans-serif;
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        cursor: pointer;
+    }
+}
+
+p.success {
+    @extend p.error;
+    background: #43AC6A;
+}

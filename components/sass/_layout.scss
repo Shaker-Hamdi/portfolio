@@ -12,6 +12,10 @@ div.globalWrapper {
     }
 }//globalWrapper
 
+p.error, p.success {
+    @include full;
+}//error and success messages
+
 header.mainHeader {
     @include full;
 }//header

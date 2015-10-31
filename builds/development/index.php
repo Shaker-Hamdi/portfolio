@@ -77,9 +77,9 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
         $error_msg[] = "Invalid website url.\r\n";
     
     if ($error_msg == NULL && $points <= $maxPoints) {
-        $subject = "Automatic Form Email";
+        $subject = "Message from your Website";
         
-        $message = "You received this e-mail message through your website: \n\n";
+        $message = "You received this message through your website: \n\n";
         foreach ($_POST as $key => $val) {
             if (is_array($val)) {
                 foreach ($val as $subval) {
@@ -141,17 +141,19 @@ function get_data($var) {
 </head>
 
 <body>
-    <?php
-    if (!empty($error_msg)) {
-        echo '<p class="error">ERROR: '. implode("<br />", $error_msg) . "</p>";
-    }
-    if ($result != NULL) {
-        echo '<p class="success">'. $result . "</p>";
-    }
-    ?>
     <a href="#" class="backToTop"><i class="icon">&#xf106;</i></a>
     <div class="container">
         <div class="globalWrapper">
+
+            <?php
+            if (!empty($error_msg)) {
+                echo '<p class="error">'. implode("<br />", $error_msg) . '<i class="dismess">x</i></p>';
+            }
+            if ($result != NULL) {
+                echo '<p class="success">'. $result . '<i class="dismess">x</i></p>';;
+            }
+            ?>
+
             <header class="mainHeader">
                 <h1><a href="index.html">Shaker Hamdi</a></h1>
             </header>
