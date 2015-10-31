@@ -11,6 +11,7 @@ var env,
 	jsSources,
 	sassSources,
 	htmlSources,
+    phpSources,
 	outputDir,
 	sassStyle;
 
@@ -26,6 +27,7 @@ if (env === 'development') {
 jsSources = ['components/scripts/owl.carousel.min.js', 'components/scripts/jquery.magnific-popup.js', 'components/scripts/jquery.singlePageNav.min.js', 'components/scripts/customScript.js'];
 sassSources = ['components/sass/style.scss'];
 htmlSources = [outputDir + '*.html'];
+phpSources = [outputDir + '*.php'];
 
 // js function
 gulp.task('js', function() {
@@ -61,6 +63,13 @@ gulp.task('html', function() {
 		.pipe(gulpif(env === 'production', gulp.dest(outputDir)));
 });
 
+// php function
+gulp.task('php', function() {
+    gulp.src('builds/development/*.php')
+        .pipe(connect.reload())
+        .pipe(gulpif(env === 'production', gulp.dest(outputDir)));
+});
+
 // autoreload function
 gulp.task('connect', function() {
 	connect.server({
@@ -82,4 +91,4 @@ gulp.task('move', function() {
 		.pipe(gulpif(env === 'production', gulp.dest(outputDir + 'images')))
 });
 
-gulp.task('default', ['watch', 'html', 'js', 'compass', 'move', 'connect']);
+gulp.task('default', ['watch', 'html', 'php', 'js', 'compass', 'move', 'connect']);
