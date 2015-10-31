@@ -116,6 +116,10 @@ section.projectDetails {
     }
 }//projectDetails
 
+section.thanksMessage {
+    @include full;
+}//thanksMessage
+
 footer {
     @include full;
 

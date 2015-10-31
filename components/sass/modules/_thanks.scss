@@ -1,0 +1,15 @@
+section.thanksMessage {
+    padding-top: 40px;
+
+    h4 {
+        color: $jaffa;
+        font-size: 30px;
+        text-align: center;
+        margin-bottom: 40px;
+
+        @include breakpoint(max-width $phoneLandscape) {
+            font-size: 24px;
+            line-height: 2;
+        }
+    }
+}//thanksMessage

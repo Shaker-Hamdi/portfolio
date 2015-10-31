@@ -416,6 +416,15 @@ section.projectDetails div.gallery div.slider a:nth-child(4n + 4) {
 }
 
 /* line 119, ../../../components/sass/_layout.scss */
+section.thanksMessage {
+  clear: both;
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* line 123, ../../../components/sass/_layout.scss */
 footer {
   clear: both;
   width: 100%;
@@ -423,7 +432,7 @@ footer {
   margin-left: 0;
   margin-right: 0;
 }
-/* line 122, ../../../components/sass/_layout.scss */
+/* line 126, ../../../components/sass/_layout.scss */
 footer div.socialLinks {
   clear: both;
   width: 100%;
@@ -431,7 +440,7 @@ footer div.socialLinks {
   margin-left: 0;
   margin-right: 0;
 }
-/* line 126, ../../../components/sass/_layout.scss */
+/* line 130, ../../../components/sass/_layout.scss */
 footer p {
   clear: both;
   width: 100%;
@@ -4611,6 +4620,58 @@ section#about article.content div.personalImage {
 section#about article.content div.text p {
   line-height: 2;
 }
+/* line 32, ../../../components/sass/modules/_about.scss */
+section#about article.content div.text div.socialLinks {
+  text-align: left;
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: dotted 1px #eeeeee;
+}
+/* line 39, ../../../components/sass/modules/_about.scss */
+section#about article.content div.text div.socialLinks ul li {
+  display: inline-block;
+}
+/* line 42, ../../../components/sass/modules/_about.scss */
+section#about article.content div.text div.socialLinks ul li a {
+  display: block;
+  width: 30px;
+  height: 30px;
+  line-height: 25px;
+  border: solid 1px #eeeeee;
+  color: #ffffff;
+  text-align: center;
+}
+/* line 51, ../../../components/sass/modules/_about.scss */
+section#about article.content div.text div.socialLinks ul li a:hover {
+  background: #ffffff !important;
+}
+/* line 55, ../../../components/sass/modules/_about.scss */
+section#about article.content div.text div.socialLinks ul li a.facebook {
+  background: #3b5998;
+  border-color: #3b5998;
+}
+/* line 59, ../../../components/sass/modules/_about.scss */
+section#about article.content div.text div.socialLinks ul li a.facebook:hover {
+  color: #3b5998;
+}
+/* line 64, ../../../components/sass/modules/_about.scss */
+section#about article.content div.text div.socialLinks ul li a.google {
+  background: #dd4b39;
+  border-color: #dd4b39;
+}
+/* line 68, ../../../components/sass/modules/_about.scss */
+section#about article.content div.text div.socialLinks ul li a.google:hover {
+  color: #dd4b39;
+}
+/* line 73, ../../../components/sass/modules/_about.scss */
+section#about article.content div.text div.socialLinks ul li a.linkedIn {
+  background: #007bb5;
+  border-color: #007bb5;
+}
+/* line 77, ../../../components/sass/modules/_about.scss */
+section#about article.content div.text div.socialLinks ul li a.linkedIn:hover {
+  color: #007bb5;
+}
 
 /* line 1, ../../../components/sass/modules/_portfolio.scss */
 section#portfolio {
@@ -5179,6 +5240,25 @@ section.projectDetails article.content div.gallery div.slider a {
         }
     }
 } */
+/* line 1, ../../../components/sass/modules/_thanks.scss */
+section.thanksMessage {
+  padding-top: 40px;
+}
+/* line 4, ../../../components/sass/modules/_thanks.scss */
+section.thanksMessage h4 {
+  color: #ee733d;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+@media (max-width: 768px) {
+  /* line 4, ../../../components/sass/modules/_thanks.scss */
+  section.thanksMessage h4 {
+    font-size: 24px;
+    line-height: 2;
+  }
+}
+
 /* line 1, ../../../components/sass/modules/_footer.scss */
 footer {
   padding-top: 20px;

@@ -28,6 +28,60 @@ section#about {
             p {
                 line-height: 2;
             }
+
+            div.socialLinks {
+                text-align: left;
+                margin-top: 10px;
+                padding-top: 10px;
+                border-top: dotted 1px $borderGray;
+
+                ul {
+                    li {
+                        display: inline-block;
+
+                        a {
+                            display: block;
+                            width: 30px;
+                            height: 30px;
+                            line-height: 25px;
+                            border: solid 1px $borderGray;
+                            color: $white;
+                            text-align: center;
+
+                            &:hover {
+                                background: $white !important;
+                            }
+
+                            &.facebook {
+                                background: #3b5998;
+                                border-color: #3b5998;
+
+                                &:hover {
+                                    color: #3b5998;
+                                }
+                            }
+
+                            &.google {
+                                background: #dd4b39;
+                                border-color: #dd4b39;
+
+                                &:hover {
+                                    color: #dd4b39;
+                                }
+                            }
+
+                            &.linkedIn {
+                                background: #007bb5;
+                                border-color: #007bb5;
+
+                                &:hover {
+                                    color: #007bb5;
+                                }
+                            }
+                        }
+                    }
+                }
+            }//socialLinks
         }
     }
 }//about
