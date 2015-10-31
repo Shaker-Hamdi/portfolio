@@ -71,20 +71,29 @@ $weight: 400) {
     font-weight: $weight;
 }
 
-@mixin sectionHeader($font: $hFont,
-$size: 30px,
-$letterSpacing: 1px) {
+@mixin sectionHeader($font: $hFont, $size: 30px, $letterSpacing: 1px) {
+
     header.sectionHeader {
         width: 100%;
         margin-bottom: 40px;
         @include clearfix;
+
+        @include breakpoint(max-width $phoneLandscape) {
+            margin-bottom: 20px;
+        }
+
         h3 {
             font-family: $font;
             font-size: $size;
             letter-spacing: $letterSpacing;
             color: $toryBlue;
             text-align: center;
+
+            @include breakpoint(max-width $phoneLandscape) {
+                font-size: 24px;
+            }
         }
+
         hr {
             clear: both;
             width: 30px;
@@ -119,6 +128,10 @@ $letterSpacing: 1px) {
                 width: 50%;
             }
         }
+    }
+
+    &:focus, &:visited {
+        border: none;
     }
 
     span.text {

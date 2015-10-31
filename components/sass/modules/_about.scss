@@ -3,12 +3,26 @@ section#about {
     border-bottom: solid 1px $borderGray;
     @include clearfix;
 
+    @include breakpoint(max-width $phoneLandscape) {
+        padding-top: 20px;
+    }
+
     @include sectionHeader;
     
     article.content {
         margin-bottom: 40px;
+
+        @include breakpoint(max-width $phoneLandscape) {
+            margin-bottom: 20px;
+        }
         
-        div.personalImage {}
+        div.personalImage {
+            text-align: center;
+
+            @include breakpoint(max-width $phoneLandscape) {
+                margin-bottom: 20px;
+            }
+        }
 
         div.text {
             p {

@@ -1,4 +1,70 @@
-div.projectDetails {
+section.projectDetails {
+    padding-top: 40px;
+    @include clearfix;
+
+    @include sectionHeader;
+    
+    article.content {
+        margin-bottom: 40px;
+        @include clearfix;
+
+        div.details {
+            p {
+                line-height: 2;
+                margin-bottom: 10px;
+
+                a {
+                    color: $textColorDark;
+                    border-bottom: dotted 1px $textColorLight;
+
+                    &:hover {
+                        color: $jaffa;
+                        border-color: $jaffa;
+                    }
+                }
+            }
+
+            ul {
+                list-style: square;
+                list-style-position: inside;
+                margin-bottom: 40px;
+
+                li {
+                    color: $jaffa;
+
+                    a {
+                        color: $textColorDark;
+                        border-bottom: dotted 1px $textColorLight;
+                        line-height: 2;
+
+                        &:hover {
+                            color: $toryBlue;
+                            border-color: $jaffa;
+                        }
+                    }
+                }
+            }
+        }//details
+
+        div.gallery {
+            padding-top: 40px;
+            border-top: dashed 1px $sliver;
+
+            div.slider {
+                a {
+                    height: 200px;
+                    overflow: hidden;
+                    border: solid 1px $borderGray;
+                    margin-bottom: 10px;
+                    padding: 5px;
+                }
+            }
+        }//gallery
+
+    }//content
+}//projectDetails
+
+/* div.projectDetails {
     width: 70%;
     margin: auto;
     background: $white;
@@ -24,4 +90,20 @@ div.projectDetails {
         top: 0;
         color: $textColorLight;
     }
-}//projectDetails
+
+    div.imageSlider {
+        width: 40%;
+        float: left;
+
+        ul.owlCarousel {
+            width: 100%;
+            display: block;
+            float: left;
+            overflow: hidden;
+
+            div.owl-item {
+                float: left;
+            }
+        }
+    }
+} *///projectDetails

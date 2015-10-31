@@ -5,6 +5,11 @@ div.container {
 div.globalWrapper {
     @include span(10 of 12);
     @include push(1);
+
+    @include breakpoint(max-width $phoneLandscape) {
+        @include full;
+        @include pad(10px);
+    }
 }//globalWrapper
 
 header.mainHeader {
@@ -19,10 +24,18 @@ section#about {
 
         div.personalImage {
             @include span(3 of 10);
+
+            @include breakpoint(max-width $phoneLandscape) {
+                @include full;
+            }
         }
 
         div.text {
             @include span(last 7 of 10);
+
+            @include breakpoint(max-width $phoneLandscape) {
+                @include full;
+            }
         }
     }//content
 }//about
@@ -38,15 +51,22 @@ section#portfolio {
 
             div.projectThumb {
                 @include span(5 of 10);
+
+                @include breakpoint(max-width $phoneLandscape) {
+                    @include full;
+                }
             }
 
             div.projectDesc {
                 @include span(last 5 of 10);
+
+                @include breakpoint(max-width $phoneLandscape) {
+                    @include full;
+                }
             }
         }
     }//content
 }//portfolio
-
 
 section#contactMe {
     @include full;
@@ -59,10 +79,18 @@ section#contactMe {
 
             label.name {
                 @include span(5 of 10);
+
+                @include breakpoint(max-width $phoneLandscape) {
+                    @include full;
+                }
             }
 
             label.mail {
                 @include span(last 5 of 10);
+
+                @include breakpoint(max-width $phoneLandscape) {
+                    @include full;
+                }
             }
 
             label.message, div.submit {
@@ -72,6 +100,30 @@ section#contactMe {
     }//content
 }//contactMe
 
+section.projectDetails {
+    @include full;
+
+    div.details {
+        @include full;
+    }
+
+    div.gallery {
+        @include full;
+
+        div.slider a {
+            @include gallery(10/4 of 10 1/5);
+        }
+    }
+}//projectDetails
+
 footer {
     @include full;
+
+    div.socialLinks {
+        @include full;
+    }
+
+    p {
+        @include full;
+    }
 }//footer

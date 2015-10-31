@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-	(function() {
+    (function() {
         var backToTop = $('a.backToTop');
 
         backToTop.on('click', function(event) {
@@ -33,8 +33,24 @@ $(document).ready(function() {
         });
     })(); //Navigation
 
-
     (function() {
+        if ($("div.slider").length) {
+            $('div.slider').magnificPopup({
+                delegate: 'a',
+                type: 'image',
+                tLoading: 'Loading image #%curr%...',
+                mainClass: 'mfp-img-mobile',
+                gallery: {
+                    enabled: true,
+                    navigateByImgClick: true,
+                    preload: [0, 1] // Will preload 0 - before current, and 1 after the current image
+                }
+            });
+        }
+    })(); //Projce Details
+
+
+    /*(function() {
         if ($("div.project a.more").length) {
             $("div.project a.more").magnificPopup({
                 type: 'inline',
@@ -61,13 +77,19 @@ $(document).ready(function() {
                             var owl = $("ul.owlCarousel");
 
                             owl.owlCarousel({
-                                loop: false,
-                                items:1,
-                                margin: 15,
-                                responsiveClass: true,
-                                dots: true,
-                                nav: false,
-                                autoHeight:false
+                                rtl: false,
+                                loop: true, //Disable to avoid the "clone" bug in the beta 2.4 version
+                                items: 1,
+                                pagination: false,
+                                nav: true,
+                                navText: [
+                                    "<i class='icon'>&#xf061;</i>",
+                                    "<i class='icon'>&#xf060;</i>"
+                                ],
+                                autoplay: true,
+                                autoplayTimeout: 3000,
+                                autoplayHoverPause: true,
+                                autoHeight:true
                             });
                         }
                     },
@@ -80,6 +102,7 @@ $(document).ready(function() {
                 midClick: true // allow opening popup on middle mouse click. Always set
             });
         }
-    })(); //productLink
+    })();*/ //Projce Details
+
 
 });

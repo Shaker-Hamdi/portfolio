@@ -3,10 +3,18 @@ section#portfolio {
     border-bottom: solid 1px $borderGray;
     @include clearfix;
 
+    @include breakpoint(max-width $phoneLandscape) {
+        padding-top: 20px;
+    }
+
     @include sectionHeader;
     
     article.content {
         margin-bottom: 40px;
+
+        @include breakpoint(max-width $phoneLandscape) {
+            margin-bottom: 20px;
+        }
 
         div.project {
             margin-top: 80px;
@@ -15,7 +23,13 @@ section#portfolio {
                 margin-top: 0;
             }
 
-            div.projectThumb {}
+            div.projectThumb {
+                text-align: center;
+
+                @include breakpoint(max-width $phoneLandscape) {
+                    margin-bottom: 20px;
+                }
+            }
 
             div.projectDesc {
                 h2 {

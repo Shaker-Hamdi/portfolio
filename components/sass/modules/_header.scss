@@ -6,6 +6,10 @@ header.mainHeader {
         margin: 40px auto;
         display: block;
 
+        @include breakpoint(max-width $phoneLandscape) {
+            margin: 20px auto;
+        }
+
         a {
             display: block;
             width: 163px;

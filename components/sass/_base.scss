@@ -17,6 +17,10 @@ body {
     padding: 40px 0;
     font-size: 14px;
 
+    @include breakpoint(max-width $phoneLandscape) {
+        padding: 0;
+    }
+
     // important for the mmenu plugin to work correctly
     background: $bgGray;
 

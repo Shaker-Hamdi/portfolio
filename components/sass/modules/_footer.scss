@@ -1,7 +1,59 @@
 footer {
-    margin-top: 40px;
+    padding-top: 20px;
+    border-top: solid 1px $borderGray;
     margin-bottom: 40px;
     @include clearfix;
+
+    div.socialLinks {
+        text-align: center;
+        margin-bottom: 20px;
+
+        ul {
+            li {
+                display: inline-block;
+
+                a {
+                    display: block;
+                    width: 30px;
+                    height: 30px;
+                    line-height: 25px;
+                    border: solid 1px $borderGray;
+                    color: $white;
+
+                    &:hover {
+                        background: $white !important;
+                    }
+
+                    &.facebook {
+                        background: #3b5998;
+                        border-color: #3b5998;
+
+                        &:hover {
+                            color: #3b5998;
+                        }
+                    }
+
+                    &.google {
+                        background: #dd4b39;
+                        border-color: #dd4b39;
+
+                        &:hover {
+                            color: #dd4b39;
+                        }
+                    }
+
+                    &.linkedIn {
+                        background: #007bb5;
+                        border-color: #007bb5;
+
+                        &:hover {
+                            color: #007bb5;
+                        }
+                    }
+                }
+            }
+        }
+    }//socialLinks
 
     p {
         text-align: center;

@@ -12,8 +12,11 @@ nav.mainNav {
                 position: relative;
                 padding: 20px;
                 display: block;
-                font-weight: 700;
                 letter-spacing: .5px;
+
+                @include breakpoint(max-width $phoneLandscape) {
+                    padding: 10px;
+                }
 
                 &:after {
                     content: "";
@@ -51,6 +54,10 @@ nav.mainNav {
                     &:after, &:before {
                         width: 50%;
                     }
+                }
+
+                i {
+                    margin-right: 10px;
                 }
             }
         }
