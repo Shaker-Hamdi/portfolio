@@ -278,6 +278,19 @@ function get_data($var) {
 
                     <div class="project">
                         <div class="projectThumb">
+                            <img src="images/renault/projectThumb.jpg" alt="project Thumb">
+                        </div>
+
+                        <div class="projectDesc">
+                            <h2>Renault</h2>
+                            <p>Renault is a mobile app I did while I was working as Art Director and front-end developer in my previous company "Adsia". It was supposed to be the official app for Renault Egypt at the time, but unfortunately due to some major problems the company had to shut down.</p>
+                            <a href="renault.html" class="more" target="_blank"><span class="text">Details</span><span class="bg"></span></a>
+                        </div>
+                    </div>
+                    <!-- project -->
+
+                    <div class="project">
+                        <div class="projectThumb">
                             <img src="images/barsoom/projectThumb.jpg" alt="project Thumb">
                         </div>
 
@@ -309,13 +322,51 @@ function get_data($var) {
 
                         <div class="projectDesc">
                             <h2>Shopesta</h2>
-                            <p>Shopesta is a PSD shopping template that I did for themeforest.net.<br>The HTML live version of this template is coming soon :)</p>
+                            <p>Shopesta is a PSD shopping template that I did for <a href="http://themeforest.net/" target="_blank">themeforest.net</a>.<br>The HTML live version of this template is coming soon :)</p>
                             <a href="http://themeforest.net/item/shopesta-ecommerce-psd-template/6645502" class="more" target="_blank"><span class="text">Details</span><span class="bg"></span></a>
                         </div>
                     </div>
                     <!-- project -->
 
-                    
+                    <div class="project">
+                        <div class="projectThumb">
+                            <img src="images/deft_design/projectThumb.jpg" alt="project Thumb">
+                        </div>
+
+                        <div class="projectDesc">
+                            <h2>Deft Design</h2>
+                            <p>Deft Design is a another template that I did for <a href="http://themeforest.net/" target="_blank">themeforest.net</a>. It's a "Retro" style blog template in both light and dark color schemes :)<br>For the PSD version, please visit "<a href="http://themeforest.net/item/deft-design-light-and-dark-template/2285260">This Link</a>"<br>And for the HTML version clik on the "Details" button below :)</p>
+                            <a href="http://sheko.me/deft_design/" class="more" target="_blank"><span class="text">Details</span><span class="bg"></span></a>
+                        </div>
+                    </div>
+                    <!-- project -->
+
+                    <div class="project">
+                        <div class="projectThumb">
+                            <img src="images/atary/projectThumb.jpg" alt="project Thumb">
+                        </div>
+
+                        <div class="projectDesc">
+                            <h2>Atary</h2>
+                            <p>Atary is a logo I did for a "Gaming and Caffe" entertainment chain in Cairo. It was a fun project to work on.<br>To see the process for this logo click on the "Details" button below.</p>
+                            <a href="atary.html" class="more" target="_blank"><span class="text">Details</span><span class="bg"></span></a>
+                        </div>
+                    </div>
+                    <!-- project -->
+
+                    <div class="project">
+                        <div class="projectThumb">
+                            <img src="images/crepeiangy/projectThumb.jpg" alt="project Thumb">
+                        </div>
+
+                        <div class="projectDesc">
+                            <h2>Crepeiangy</h2>
+                            <p>Crepeiangy is a crepe food chain identity project that I did a while back.</p>
+                            <a href="crepeiangy.html" class="more" target="_blank"><span class="text">Details</span><span class="bg"></span></a>
+                        </div>
+                    </div>
+                    <!-- project -->
+
                 </article>
                 <!-- content -->
             </section>
