@@ -302,6 +302,19 @@ function get_data($var) {
                     </div>
                     <!-- project -->
 
+                    <div class="project">
+                        <div class="projectThumb">
+                            <img src="images/shopesta/projectThumb.jpg" alt="project Thumb">
+                        </div>
+
+                        <div class="projectDesc">
+                            <h2>Shopesta</h2>
+                            <p>Shopesta is a PSD shopping template that I did for themeforest.net.<br>The HTML live version of this template is coming soon :)</p>
+                            <a href="http://themeforest.net/item/shopesta-ecommerce-psd-template/6645502" class="more" target="_blank"><span class="text">Details</span><span class="bg"></span></a>
+                        </div>
+                    </div>
+                    <!-- project -->
+
                     
                 </article>
                 <!-- content -->
