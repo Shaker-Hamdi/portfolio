@@ -181,7 +181,7 @@ function get_data($var) {
                     <!-- personalImage -->
 
                     <div class="text">
-                        <p>Salam all.<br>My  name is Shaker Hamdi Ahmed. I’m a UI Designer / Developer living in Cairo, Egypt. I have 5 years of experience in UI design and Front-End devleloping. I worked on a variety of projects (Web and Mobile), and for a number of companies both big and small.</p>
+                        <p>Salam all.<br>My name is Shaker Hamdi Ahmed. I’m a UI Developer / Designer living in Cairo, Egypt. I have 5 years of experience in UI design and Front-End devleloping. I worked on a variety of projects (Web and Mobile), and for a number of companies both big and small.</p>
 
                         <div class="socialLinks">
                             <ul>
