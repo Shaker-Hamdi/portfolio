@@ -4388,11 +4388,12 @@ img {
   color: #ffffff;
   max-width: 100%;
   height: auto;
-  display: inline-block;
   vertical-align: middle;
+  display: block;
+  margin: auto;
 }
 
-/* line 22, ../../../components/sass/modules/_globalStyles.scss */
+/* line 24, ../../../components/sass/modules/_globalStyles.scss */
 a.backToTop {
   position: fixed;
   bottom: 0;
@@ -4408,16 +4409,16 @@ a.backToTop {
   display: none;
 }
 @media (max-width: 768px) {
-  /* line 22, ../../../components/sass/modules/_globalStyles.scss */
+  /* line 24, ../../../components/sass/modules/_globalStyles.scss */
   a.backToTop {
     display: none !important;
   }
 }
-/* line 40, ../../../components/sass/modules/_globalStyles.scss */
+/* line 42, ../../../components/sass/modules/_globalStyles.scss */
 a.backToTop:hover {
   border-right-color: #0B519F;
 }
-/* line 44, ../../../components/sass/modules/_globalStyles.scss */
+/* line 46, ../../../components/sass/modules/_globalStyles.scss */
 a.backToTop i {
   font-size: 18px;
   position: absolute;
@@ -4426,7 +4427,7 @@ a.backToTop i {
   font-size: 24px;
 }
 
-/* line 53, ../../../components/sass/modules/_globalStyles.scss */
+/* line 55, ../../../components/sass/modules/_globalStyles.scss */
 .hide {
   display: none !important;
   width: 0 !important;
@@ -4436,7 +4437,7 @@ a.backToTop i {
   border: none;
 }
 
-/* line 62, ../../../components/sass/modules/_globalStyles.scss */
+/* line 64, ../../../components/sass/modules/_globalStyles.scss */
 p.error, p.success {
   margin-top: 20px;
   color: #ffffff;
@@ -4444,7 +4445,7 @@ p.error, p.success {
   background: #f04124;
   position: relative;
 }
-/* line 69, ../../../components/sass/modules/_globalStyles.scss */
+/* line 71, ../../../components/sass/modules/_globalStyles.scss */
 p.error i.dismess, p.success i.dismess {
   font-family: tahoma, sans-serif;
   position: absolute;
@@ -4453,7 +4454,7 @@ p.error i.dismess, p.success i.dismess {
   cursor: pointer;
 }
 
-/* line 78, ../../../components/sass/modules/_globalStyles.scss */
+/* line 80, ../../../components/sass/modules/_globalStyles.scss */
 p.success {
   background: #43AC6A;
 }
