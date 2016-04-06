@@ -1,95 +1,104 @@
 var gulp = require('gulp'),
-	gutil = require('gulp-util'),
-	browserify = require('gulp-browserify'),
-	compass = require('gulp-compass'),
-	connect = require('gulp-connect'),
-	gulpif = require('gulp-if'),
-	uglify = require('gulp-uglify'),
-	concat = require('gulp-concat');
+    gutil = require('gulp-util'),
+    compass = require('gulp-compass'),
+    gulpif = require('gulp-if'),
+    uglify = require('gulp-uglify'),
+    concat = require('gulp-concat'),
+    notify = require('gulp-notify'),
+    browsersync = require('browser-sync');
 
 var env,
-	jsSources,
-	sassSources,
-	htmlSources,
-    phpSources,
-	outputDir,
-	sassStyle;
+    jsSources,
+    sassSources,
+    sassSources_rtl,
+    htmlSources,
+    outputDir,
+    sassStyle;
 
 env = process.env.NODE_ENV || 'development';
 if (env === 'development') {
-	outputDir = 'builds/development/';
-	sassStyle = 'expanded';
+    outputDir = 'builds/development/';
+    sassStyle = 'expanded';
 } else {
-	outputDir = 'builds/production/';
-	sassStyle = 'compressed';
+    outputDir = 'builds/production/';
+    sassStyle = 'compressed';
 }
 
 jsSources = ['components/scripts/owl.carousel.min.js', 'components/scripts/jquery.magnific-popup.js', 'components/scripts/jquery.singlePageNav.min.js', 'components/scripts/customScript.js'];
-sassSources = ['components/sass/style.scss'];
+sassSources = ['components/sass/app.scss'];
 htmlSources = [outputDir + '*.html'];
-phpSources = [outputDir + '*.php'];
+
+//BrowserSync Function
+gulp.task('browser-sync', function() {
+    browsersync({
+        // Fill This with proxy domain
+        proxy: 'http://shakerhamdi',
+        port: 3000
+    });
+});
+
+gulp.task('browsersync-reload', function () {
+    browsersync.reload();
+});
 
 // js function
 gulp.task('js', function() {
-	gulp.src(jsSources)
-		.pipe(concat('script.js'))
-		// .pipe(browserify())
-		.on('error', gutil.log)
-		.pipe(gulpif(env === 'production', uglify()))
-		.pipe(gulp.dest(outputDir + 'js'))
-		.pipe(connect.reload());
+    gulp.src(jsSources)
+        .pipe(concat('script.js'))
+        // .pipe(browserify())
+        .on('error', gutil.log)
+        .pipe(gulpif(env === 'production', uglify()))
+        .pipe(gulp.dest(outputDir + 'js'))
+        .pipe(notify({ message: 'JS task complete' }));
 });
 
 // compass function
 gulp.task('compass', function() {
-	gulp.src(sassSources)
-		.pipe(compass({
-				sass: 'components/sass/',
-				image: outputDir + 'images',
-				sourcemap: true,
-				style: sassStyle,
-				css: outputDir + 'css',
-				require: ['susy', 'breakpoint']
-			})
-			.on('error', gutil.log))
-		// .pipe(gulp.dest(outputDir + 'css'))
-		.pipe(connect.reload());
+    gulp.src(sassSources)
+        .pipe(compass({
+                sass: 'components/sass/',
+                image: outputDir + 'images',
+                sourcemap: true,
+                style: sassStyle,
+                css: outputDir + 'css',
+                require: ['susy', 'breakpoint']
+            })
+            .on('error', gutil.log))
+        .pipe(browsersync.reload({ stream:true }))
+        .pipe(notify({ message: 'Compass task complete' }));
 });
 
 // html function
 gulp.task('html', function() {
-	gulp.src('builds/development/*.html')
-		.pipe(connect.reload())
-		.pipe(gulpif(env === 'production', gulp.dest(outputDir)));
+    gulp.src('builds/development/*.html')
+        .pipe(gulpif(env === 'production', gulp.dest(outputDir)));
 });
 
 // php function
 gulp.task('php', function() {
     gulp.src('builds/development/*.php')
-        .pipe(connect.reload())
         .pipe(gulpif(env === 'production', gulp.dest(outputDir)));
-});
-
-// autoreload function
-gulp.task('connect', function() {
-	connect.server({
-		root: 'builds/development/',
-		livereload: true
-	});
-});
-
-// watch function
-gulp.task('watch', function() {
-	gulp.watch(jsSources, ['js']);
-	gulp.watch('components/sass/**/*.scss', ['compass']);
-	gulp.watch('builds/development/*.html', ['html']);
-    gulp.watch('builds/development/*.php', ['php']);
 });
 
 // Copy images to production
 gulp.task('move', function() {
-	gulp.src('builds/development/images/**/*.*')
-		.pipe(gulpif(env === 'production', gulp.dest(outputDir + 'images')))
+    gulp.src('builds/development/images/**/*.*')
+        .pipe(gulpif(env === 'production', gulp.dest(outputDir + 'images')));
 });
 
-gulp.task('default', ['watch', 'html', 'php', 'js', 'compass', 'move', 'connect']);
+// Copy videos to production
+gulp.task('moveVideos', function () {
+    gulp.src('builds/development/videos/**/*.*')
+        .pipe(gulpif(env === 'production', gulp.dest(outputDir + 'videos')));
+});
+
+// BrowserSync Function and Watch Function
+gulp.task('server', ['browser-sync'], function() {
+
+    gulp.watch("components/sass/**/*.scss", ['compass']);
+    gulp.watch("builds/development/*.html", ['browsersync-reload']);
+    gulp.watch("builds/development/*.php", ['browsersync-reload']);
+    gulp.watch("components/scripts/*.js", ['js', 'browsersync-reload']);
+});
+
+gulp.task('default', ['server', 'html', 'php', 'js', 'compass', 'move', 'moveVideos']);

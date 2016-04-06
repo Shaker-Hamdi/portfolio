@@ -131,7 +131,7 @@ function get_data($var) {
     <meta name="format-detection" content="telephone=no">
     <meta name="description" content="Shaker Hamdi">
     <title>Shaker Hamdi</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/app.css">
     <link href="images/shakerfav.ico" rel="shortcut icon" type="image/x-icon">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <!--[if lt IE 9]>
@@ -204,6 +204,20 @@ function get_data($var) {
                 </header>
 
                 <article class="content">
+                    <div class="project">
+                        <div class="projectThumb">
+                            <img src="images/scoutmee/projectThumb.jpg" alt="project Thumb">
+                        </div>
+
+                        <div class="projectDesc">
+                            <h2>Scoutmee</h2>
+                            <p>Scoutmee is yet another project I did for my current company (<a href="http://moselaymd.com/" target="_blank">Moselay Media Development</a>). It's almost finished with final touches here and there. In the details page you'll find both a link for the static version of the project and screenshots of the PSD design.</p>
+                            <a href="scoutmee.html" class="more"><span class="text">Details</span><span class="bg"></span></a>
+                        </div>
+                    </div>
+                    <!-- project -->
+
+
                     <div class="project">
                         <div class="projectThumb">
                             <img src="images/hepca/projectThumb.jpg" alt="project Thumb">
