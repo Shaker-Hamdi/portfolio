@@ -5,7 +5,8 @@ var gulp = require('gulp'),
     uglify = require('gulp-uglify'),
     concat = require('gulp-concat'),
     notify = require('gulp-notify'),
-    browsersync = require('browser-sync');
+	browsersync = require('browser-sync'),
+	cssnano = require('gulp-cssnano');
 
 var env,
     jsSources,
@@ -21,7 +22,7 @@ if (env === 'development') {
     sassStyle = 'expanded';
 } else {
     outputDir = 'builds/production/';
-    sassStyle = 'compressed';
+    // sassStyle = 'compressed';
 }
 
 jsSources = ['components/scripts/owl.carousel.min.js', 'components/scripts/jquery.magnific-popup.js', 'components/scripts/jquery.singlePageNav.min.js', 'components/scripts/customScript.js'];
@@ -60,7 +61,7 @@ gulp.task('compass', function() {
                 image: outputDir + 'images',
                 sourcemap: true,
                 style: sassStyle,
-                css: outputDir + 'css',
+                css: 'builds/development/' + 'css',
                 require: ['susy', 'breakpoint']
             })
             .on('error', gutil.log))
@@ -92,6 +93,14 @@ gulp.task('moveVideos', function () {
         .pipe(gulpif(env === 'production', gulp.dest(outputDir + 'videos')));
 });
 
+// Minify CSS using "CSSNano" package
+gulp.task('minifyCSS', function () {
+  return gulp.src('builds/development/css/app.css')
+    .pipe(cssnano())
+    .pipe(gulp.dest('builds/production/css'))
+    .pipe(notify({ message: 'MINIFY CSS COMPLETE' }));
+});
+
 // BrowserSync Function and Watch Function
 gulp.task('server', ['browser-sync'], function() {
 
@@ -101,4 +110,4 @@ gulp.task('server', ['browser-sync'], function() {
     gulp.watch("components/scripts/*.js", ['js', 'browsersync-reload']);
 });
 
-gulp.task('default', ['server', 'html', 'php', 'js', 'compass', 'move', 'moveVideos']);
+gulp.task('default', ['server', 'html', 'php', 'js', 'compass', 'minifyCSS', 'move', 'moveVideos']);

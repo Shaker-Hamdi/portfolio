@@ -204,6 +204,19 @@ function get_data($var) {
                 </header>
 
                 <article class="content">
+                	<div class="project">
+                        <div class="projectThumb">
+                            <img src="images/bubbles/projectThumb.jpg" alt="project Thumb">
+                        </div>
+
+                        <div class="projectDesc">
+                            <h2>Bubbles</h2>
+                            <p>Bubbles was the main product for my former company (<a href="http://adsia.com/" target="_blank">Adsia</a>). The projcect was the heart and soul of the company, but due to unfortunate circumstances the company had to close doors, so the project is currently owned and managed by LinkDev, and I did this re-design of the back-end as a freelance job.<br>You'll find the screenshot in the details page.</p>
+                            <a href="bubbles.html" class="more"><span class="text">Details</span><span class="bg"></span></a>
+                        </div>
+                    </div>
+                    <!-- project -->
+
                     <div class="project">
                         <div class="projectThumb">
                             <img src="images/scoutmee/projectThumb.jpg" alt="project Thumb">
@@ -216,7 +229,6 @@ function get_data($var) {
                         </div>
                     </div>
                     <!-- project -->
-
 
                     <div class="project">
                         <div class="projectThumb">
