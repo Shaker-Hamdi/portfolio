@@ -439,15 +439,13 @@ function get_data($var) {
                         <li><a href="https://www.linkedin.com/profile/view?id=AAIAAATMQbcBQl3QIlplY5x58giKH8abEFLCi_o&trk=nav_responsive_tab_profile_pic" class="linkedIn" target="_blank"><i class="icon">&#xf0e1;</i></a></li>
                     </ul>
                 </div>
-                <p>&copy; 2015. All rights reserved, shakerhamdi.net</p>
+                <p>&copy; 2016. All rights reserved, shakerhamdi.net</p>
             </footer>
             <!-- footer -->
         </div>
         <!-- globalWrapper -->
     </div>
     <!-- container -->
-    <!-- For Live Reload to work -->
-    <script src="http://localhost:35729/livereload.js?snipver=1" type="text/javascript"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="js/script.js" type="text/javascript"></script>
 </body>
