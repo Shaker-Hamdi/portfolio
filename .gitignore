@@ -48,3 +48,4 @@ builds/production
 builds/**/images/*
 node_modules
 .sass-cache
+.vscode

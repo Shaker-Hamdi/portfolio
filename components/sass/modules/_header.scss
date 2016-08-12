@@ -13,10 +13,10 @@ header.mainHeader {
         a {
             display: block;
             width: 163px;
-            height: 54px;
+            height: 57px;
             margin: auto;
             @include hideText;
-            @include backgroundImage($image: "logo.png", $size: 136px 45px, $horizontal: center, $vertical: center);
+            @include backgroundImage($image: "logo.png", $size: 163px 57px, $horizontal: center, $vertical: center);
         }
     }
 }
