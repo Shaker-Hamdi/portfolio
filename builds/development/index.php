@@ -155,7 +155,7 @@ function get_data($var) {
             ?>
 
             <header class="mainHeader">
-                <h1><a href="index.html">Shaker Hamdi</a></h1>
+                <h1><a href="index.php">Shaker Hamdi</a></h1>
             </header>
             <!-- logo -->
 
@@ -204,6 +204,58 @@ function get_data($var) {
                 </header>
 
                 <article class="content">
+                    <div class="project">
+                        <div class="projectThumb">
+                            <img src="images/mmd/projectThumb.jpg" alt="project Thumb">
+                        </div>
+
+                        <div class="projectDesc">
+                            <h2>MMD Website</h2>
+                            <p>We're currently at (MMD) in the process of re-designing our official website, and this is the initial take.<br>We're aiming for a simple and clean design.<br>Please note that the site is far from finished, and this demo can be drastically changed in the future :)</p>
+                            <a href="mmd.html" class="more"><span class="text">Details</span><span class="bg"></span></a>
+                        </div>
+                    </div>
+                    <!-- project -->
+
+                    <div class="project">
+                        <div class="projectThumb">
+                            <img src="images/stylish/projectThumb.jpg" alt="project Thumb">
+                        </div>
+
+                        <div class="projectDesc">
+                            <h2>Stylish (Women Accessories)</h2>
+                            <p>Stylish is also a project we're handling at (MMD).<br>We're in the process of creating the corporate identity, and the logo is the first step.</p>
+                            <a href="stylish.html" class="more"><span class="text">Details</span><span class="bg"></span></a>
+                        </div>
+                    </div>
+                    <!-- project -->
+
+                    <div class="project">
+                        <div class="projectThumb">
+                            <img src="images/yadaweya/projectThumb.jpg" alt="project Thumb">
+                        </div>
+
+                        <div class="projectDesc">
+                            <h2>Yadaweya</h2>
+                            <p>Yadaweya is an E-commerce website specialized in selling authentic hand-crafted Egyptian products. We're re-building the website from ground up at my company (MMD), and my role in this project was to re-design the logo and the website, and also building the UI (HTML/CSS/JS).<br>The new website is about to be launched soon.</p>
+                            <a href="yadaweya.html" class="more"><span class="text">Details</span><span class="bg"></span></a>
+                        </div>
+                    </div>
+                    <!-- project -->
+
+                    <div class="project">
+                        <div class="projectThumb">
+                            <img src="images/tradeguards/projectThumb.jpg" alt="project Thumb">
+                        </div>
+
+                        <div class="projectDesc">
+                            <h2>Trade Guards</h2>
+                            <p>Trade Guards is an ongoing project in our company (MMD).<br>It's for a new security company in Egypt, and we're handling all the tech aspects for it, including the corporate identity.<br>This project is still in a very early stages and will witness a lot of improvements in the near future.</p>
+                            <a href="tradeguards.html" class="more"><span class="text">Details</span><span class="bg"></span></a>
+                        </div>
+                    </div>
+                    <!-- project -->
+
                 	<div class="project">
                         <div class="projectThumb">
                             <img src="images/bubbles/projectThumb.jpg" alt="project Thumb">
