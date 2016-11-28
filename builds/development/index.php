@@ -251,7 +251,7 @@ function get_data($var) {
                         <div class="projectDesc">
                             <h2>Trade Guards</h2>
                             <p>Trade Guards is an ongoing project in our company (MMD).<br>It's for a new security company in Egypt, and we're handling all the tech aspects for it, including the corporate identity.<br>This project is still in a very early stages and will witness a lot of improvements in the near future.</p>
-                            <a href="tradeguards.html" class="more"><span class="text">Details</span><span class="bg"></span></a>
+                            <a href="http://sheko.me/trade-guards/" target="_blank" class="more"><span class="text">Preview</span><span class="bg"></span></a>
                         </div>
                     </div>
                     <!-- project -->
@@ -323,7 +323,7 @@ function get_data($var) {
                         <div class="projectDesc">
                             <h2>Akhbar El Youm</h2>
                             <p>Akhbar El Youm is a major project I did for my current company MMD (<a href="http://moselaymd.com/" target="_blank">Moselay Media Development</a>). I was responsible for the UI Development for both the desktop and the mobile version of the website. The project is alwyas updating, so you might see some changes in the future or perhaps a complete re-design.</p>
-                            <a href="http://akhbarelyom.com/" class="more" target="_blank"><span class="text">Details</span><span class="bg"></span></a>
+                            <a href="http://akhbarelyom.com/" class="more" target="_blank"><span class="text">Preview</span><span class="bg"></span></a>
                         </div>
                     </div>
                     <!-- project -->
@@ -336,7 +336,7 @@ function get_data($var) {
                         <div class="projectDesc">
                             <h2>MMD Logo</h2>
                             <p>This the my current company's logo, MMD (<a href="http://moselaymd.com/" target="_blank">Moselay Media Development</a>). I was in charge of creating a new logo for the company, and here it is. It's currently in use in every digital or print material the company produce.</p>
-                            <a href="http://moselaymd.com/" class="more" target="_blank"><span class="text">Details</span><span class="bg"></span></a>
+                            <a href="http://moselaymd.com/" class="more" target="_blank"><span class="text">Preview</span><span class="bg"></span></a>
                         </div>
                     </div>
                     <!-- project -->
@@ -349,7 +349,7 @@ function get_data($var) {
                         <div class="projectDesc">
                             <h2>Aqarmap</h2>
                             <p>The famous <a href="https://aqarmap.com/" target="_blank">Aqarmap.com</a>. I worked for Aqarmap for quite sometime, and during this period I was in charge of the re-design and front-end developing of their website (among other things). It was one of the best projects I've worked on in my career :)</p>
-                            <a href="https://aqarmap.com/" class="more" target="_blank"><span class="text">Details</span><span class="bg"></span></a>
+                            <a href="https://aqarmap.com/" class="more" target="_blank"><span class="text">Preview</span><span class="bg"></span></a>
                         </div>
                     </div>
                     <!-- project -->
@@ -414,7 +414,7 @@ function get_data($var) {
                         <div class="projectDesc">
                             <h2>Deft Design</h2>
                             <p>Deft Design is a another template that I did for <a href="http://themeforest.net/" target="_blank">themeforest.net</a>. It's a "Retro" style blog template in both light and dark color schemes :)<br>For the PSD version, please visit "<a href="http://themeforest.net/item/deft-design-light-and-dark-template/2285260">This Link</a>"<br>And for the HTML version clik on the "Details" button below :)</p>
-                            <a href="http://sheko.me/deft_design/" class="more" target="_blank"><span class="text">Details</span><span class="bg"></span></a>
+                            <a href="http://sheko.me/deft_design/" class="more" target="_blank"><span class="text">Preview</span><span class="bg"></span></a>
                         </div>
                     </div>
                     <!-- project -->
