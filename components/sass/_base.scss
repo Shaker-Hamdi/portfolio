@@ -26,16 +26,12 @@ body {
 
 	* {
 		text-decoration: none;
-		@include transition-property(all);
-		@include transition-duration(.3s);
-		@include transition-timing-function(ease in);
+		transition: all .3s ease-in;
 	}
 
 	a, button, input {
 		text-decoration: none;
-		@include transition-property(all);
-		@include transition-duration(.3s);
-		@include transition-timing-function(ease in);
+		transition: all .3s ease-in;
 	}
 }
 .icon {

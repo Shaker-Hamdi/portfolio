@@ -168,9 +168,7 @@ $weight: 400) {
             width: 0;
             display: block;
             background: $white;
-            @include transition-property(all);
-            @include transition-duration(.3s);
-            @include transition-timing-function(ease in);
+            transition: all .3s ease-in;
         }
 
         &:after {
@@ -181,9 +179,7 @@ $weight: 400) {
             width: 0;
             display: block;
             background: $white;
-            @include transition-property(all);
-            @include transition-duration(.3s);
-            @include transition-timing-function(ease in);
+            transition: all .3s ease-in;
         }
     }
 }

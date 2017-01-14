@@ -10,44 +10,19 @@ section#contactMe {
     
     article.content {
         margin-bottom: 40px;
+        text-align: center;
 
         @include breakpoint(max-width $phoneLandscape) {
             margin-bottom: 20px;
         }
 
-        form {
-            label {
-                display: block;
-                margin-bottom: 20px;
-
-                input {
-                    width: 100%;
-                    border: solid 1px $borderGray;
-                    height: 40px;
-                    line-height: 35px;
-                    background: #fcfcfc;
-                    padding: 0 20px;
-                    outline: none;
-
-                    &:focus {
-                        border-color: $jaffa;
-                    }
-                }
-
-                textarea {
-                    @extend input;
-                    height: 190px;
-                    line-height: 2;
-                    padding: 5px 20px;
-                    resize: none;
-                }
-            }
-
-            div.submit {
-                button {
-                    @include buttonStyle;
-                }
-            }
+        a {
+            @include buttonStyle;
+            display: inline-block;
+            float: none;
+            width: auto;
+            padding: 0 15px;
+            letter-spacing: 0;
         }
     }
 }//contactMe

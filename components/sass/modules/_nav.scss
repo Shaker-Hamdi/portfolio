@@ -27,10 +27,7 @@ nav.mainNav {
                     height: 1px;
                     background: $jaffa;
                     display: block;
-
-                    @include transition-property(all);
-                    @include transition-duration(.3s);
-                    @include transition-timing-function(ease in);
+                    transition: all .3s ease-in;
                 }
 
                 &:before {
@@ -42,10 +39,7 @@ nav.mainNav {
                     height: 1px;
                     background: $jaffa;
                     display: block;
-
-                    @include transition-property(all);
-                    @include transition-duration(.3s);
-                    @include transition-timing-function(ease in);
+                    transition: all .3s ease-in;
                 }
 
                 &:hover, &.active {

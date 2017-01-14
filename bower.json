@@ -1,0 +1,21 @@
+{
+  "name": "Workflow",
+  "description": "Shaker Hamdi's Init",
+  "authors": [
+    "Shaker Hamdi"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "susy": "^2.2.12",
+    "breakpoint-sass": "^2.7.0"
+  }
+}

@@ -1,8 +1,9 @@
-// FRAMEWORKS
-@import "compass";
-@import "compass/reset";
-@import "susy";
-@import "breakpoint";
+// Reset File
+@import "reset";
+
+// Grid Systems
+@import "../../bower_components/susy/sass/susy";
+@import "../../bower_components/breakpoint-sass/stylesheets/breakpoint";
 
 // BASE FILES
 @import "variables";

@@ -43,9 +43,11 @@ projects_images/
 npm-debug.log
 
 #folders
-images/*
+images/placeholders/*
 builds/production
-builds/**/images/*
+builds/**/images/placeholders/*
 node_modules
+bower_components
+.idea
 .sass-cache
 .vscode
